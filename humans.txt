@@ -1,0 +1,3 @@
+DavidOfWatkins.com has been (and is being) constructed fully by David Watkins from the ground up through web technologies including PHP, MySQL, Javascript, jQuery, and several plugins. For more information about the site and it's owner/author is available at davidofwatkins.com
+
+Thanks for your interest :)

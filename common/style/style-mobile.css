@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+#header img {
+	display: none;
+}
+	#header h1 {
+		font-size: 25px;
+		text-align: center;
+		float: none;
+		margin: 0;
+		line-height: 50px;
+	}
+
+div#error {
+	max-width: 85%;
+}
+
+#footer {
+	margin-bottom: 5px;
+}
+#footer #likebuttons-mobile {
+	text-align: center;
+}
+
+	#footer #likebuttons-mobile > * {
+		display: inline-block;
+		margin: 10px 20px;
+	}
+	#footer #likebuttons-mobile > *:first-child {
+		margin-top: 1px;
+		vertical-align: top;
+		
+	}

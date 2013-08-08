@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+#conash3D0 {height:0px; top:-1px; display: none;}
+* { margin: 0; padding: 0; }
+#header {
+	width: 100%;
+	height: 50px;
+	min-width: 0;
+	overflow: hidden;
+}
+	#header #hcontainer {
+		width: 100%;
+	}
+#topshadow {
+	min-width: 0;
+	background: none;
+}
+#container {
+	width: 100%;
+}
+	#sidebar { /* Sidebar is not included in header.php for mobile, as the javascript messes with the viewport! */
+		display: none;
+	}
+	#supercontent {
+		width: 100%;
+	}
+		#content {
+			width: 96%;
+			padding: 0 2% 10px 2%;
+		}
+	#footer #footernav {
+		width: 100%;
+		margin-top: 20px;
+	}
+	
+
+/*********NAVIGATION************/
+#navbar {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	height: 42px;
+	text-align: center;
+}
+	#navbar .li {
+		width: 21%;
+		padding: 5px 0;
+		margin: 0 1%;
+		display: inline-block;
+		float: none;
+		overflow: hidden;
+	}

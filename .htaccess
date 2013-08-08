@@ -1,0 +1,37 @@
+# Allows the user to leave out the .php file extension in addresses (though included .php extensions should still work)
+
+# More info, see here: http://stackoverflow.com/questions/1745680/htaccess-rewrite-causes-500-error-instead-of-404
+
+# More info about modifying .htaccess: http://perishablepress.com/press/2006/01/10/stupid-htaccess-tricks/#gen2
+
+
+
+Options -MultiViews
+
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymlinks
+
+Options +SymLinksIfOwnerMatch
+RewriteEngine On
+
+RewriteBase /
+
+# as long as the request does not match an existing file:
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# as long as the request does not match an existing directory:
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# make sure new path points to an existing file:
+RewriteCond %{REQUEST_FILENAME}.php -f
+
+RewriteRule ^(.+)$ /$1.php [L,QSA]
+
+ErrorDocument 404 /404.html
+
+# Forwarding to Google+
+Redirect /+ https://plus.google.com/104494880066441442910
+
+# Other Forwarding
+Redirect /sandbox /dev
+Redirect /longlivecc http://www.youtube.com/watch?v=KZp7tDk7Sag

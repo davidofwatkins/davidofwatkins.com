@@ -1,0 +1,401 @@
+@charset "utf-8";
+/* CSS Document */
+img { border: none; }
+body {
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+	font-size: 13px;
+}
+a, a:visited, a:active, a:focus {
+	color: #06C;
+	text-decoration: none;
+}
+::selection {
+	background: #a8d1ff;
+}
+a:hover {
+	color: #09F;
+	text-decoration: underline;
+}
+#betabanner {
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	background: black;
+	color: #999;
+	font-weight: bold;
+}
+	#betabanner a {
+		color: #CCC;
+		text-decoration: none;
+	}
+	#betabanner a:hover {
+		color: white;
+	}
+#header h1 {
+	font-family: 'Josefin Sans Std Light', Arial, Helvetica, sans-serif;
+	font-size: 77px;
+	margin: 40px 0 0 0;
+	letter-spacing: 5px;
+	font-weight: normal;
+	text-align: center;
+	float: left;
+}
+#header img {
+	float: left;
+	margin: 0 20px 0 8px;
+	/* CSS3 Corners */
+	border-radius: 5px; border-radius: 5px;
+	-moz-border-radius: 5px; -moz-border-radius: 5px;
+	-webkit-border-radius: 5px; -webkit-border-radius: 5px;
+	-o-border-radius: 5px; -o-border-radius: 5px;
+}
+
+/***********
+ * Sidebar *
+ **********/
+
+/*#sidebar #welcome-message {
+	border: 1px solid #CCC;
+	border-radius: 3px;	
+	margin: 20px auto;
+	color: #333;
+}
+	#sidebar #welcome-message h1 {
+		font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+		color: #666;
+		padding: 2px;
+		font-size: 13px;
+		background: #CCC;
+		text-transform: none;
+	}
+	#sidebar #welcome-message p {
+		padding: 0 7px 5px 7px;
+		text-align: justify;
+	}*/
+#sidebar h1 {
+	text-align: center;
+	font-family: "Josefin Sans Std Light", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+/*#sidebar ul {
+	width: 90%; /* Change ul width (as opposed to li width) in order to prevent <a> tag from having a 100% width *//*
+	list-style-type: none;
+	margin: 0 auto 15px auto;
+}
+#sidebar li {
+	clear: both;
+	background: #DAE0FE;
+	color: #000;
+	margin: 3px auto 3px auto;
+	text-align: left;
+	padding: 0;
+	
+	border-radius: 4px;
+	
+	transition-property: background;
+	transition-duration: .2s;
+	-webkit-transition-property: background;
+	-webkit-transition-duration: .2s;
+	-moz-transition-property: background;
+	-moz-transition-duration: .2s;
+	-o-transition-property: background;
+	-o-transition-duration: .2s;
+}
+	#sidebar li p {
+		padding: 0;
+		line-height: 23px; /* should match height of li img *//*
+	}
+#sidebar li:hover {
+	background: #666;
+	color: #FFF;
+	
+	transition-property: background;
+	transition-duration: .2s;
+	-webkit-transition-property: background;
+	-webkit-transition-duration: .2s;
+	-moz-transition-property: background;
+	-moz-transition-duration: .2s;
+	-o-transition-property: background,;
+	-o-transition-duration: .2s;
+}
+#sidebar ul a, #sidebar ul a:visited, #sidebar ul a:active, a.delink, a.delink:visited, a.delink:active { color: inherit; text-decoration: none; }
+#sidebar li img {
+	float: left;
+	margin: 0 5px 0 0;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	height: 23px; /* should match line-height of li p *//*
+	width: 23px;
+}
+*/
+
+#sidebar a.moredw-link {
+	display: block;
+	width: 35px;
+	margin: 20px auto;
+}
+
+	#sidebar a.moredw-link img {
+		width: 30px;
+		height: 30px;
+	}
+	
+	#sidebar #likebuttons {
+		margin-top: 50px;
+	}
+		#sidebar #likebuttons iframe {
+			margin: 20px auto;
+		}
+	#sidebar #more-dw {
+		position: relative;
+	}
+
+#sidebar #socialpopup {
+	position: absolute;
+	left: 100px;
+	width: 400px;
+	height: 200px;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px gray;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	background: white;
+	border: 2px solid #666;
+	text-align: left;
+	display: none;
+}
+
+#sidebar #socialpopup:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: -20px;
+	top: 10px;
+	border: 10px solid;
+	border-color: transparent #666 transparent transparent;
+}
+
+#sidebar #socialpopup:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: -17px;
+	top: 10px;
+	border: 10px solid;
+	border-color: transparent white transparent transparent;
+}
+
+	#socialpopup .socialpopup-content {
+		display: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		position: relative;
+		z-index: 5;
+	}
+	
+	#socialpopup #gplus-popup-content #gplusbordercover {
+		border: 5px solid white;
+		height: 49px;
+		width: 190px;
+		margin-bottom: -200px;
+		background: none;
+		float: left;
+		position: relative;
+		pointer-events: none;
+		z-index: 10;
+	}
+	#socialpopup #linkedin-popup-content #linkedinbordercover {
+		border: 10px solid white;
+		height: 105px;
+		width: 345px;
+		margin-bottom: -135px;
+		background: none;
+		float: left;
+		position: relative;
+		pointer-events: none;
+		z-index: 10;
+	}
+
+#supercontent h1 {
+	text-align: center;
+	font-family: 'Raleway', Verdana, Geneva, sans-serif;
+	font-size: 45px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#supercontent h2 {
+	font-family: 'Oswald', Verdana, Geneva, sans-serif;
+	font-size: 25px;
+	font-weight: normal;
+	border-bottom: #333 solid 1px;
+	/*margin: 20px 0 20px 30px;*/
+	margin: 15px 0;
+}
+#supercontent h2[underline=off] { border-bottom: none; }
+#supercontent p { margin: auto 0 10px auto; }
+#topshadow {
+	background: url(../../images/dropshadow.png);
+	background-repeat: repeat-x;
+	min-width: 960px;
+}
+#footer a, #footer a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+#footer a:hover { color: #000; }
+#content ol li {  }
+
+/* BUTTONS */
+
+.button, .button-small {
+	padding: 3px 10px;
+	background: #333;
+	border-radius: 3px;
+	color: #CCC;
+	border: 1px solid #000;
+	font-size: 20px;
+	width: 200px;
+	margin: 25px auto 10px auto;
+	text-align: center;
+	/* CSS3 Transitions */
+	transition-property: background;
+	transition-duration: .2s;
+	-webkit-transition-property: background;
+	-webkit-transition-duration: .2s;
+	-moz-transition-property: background;
+	-moz-transition-duration: .2s;
+	-o-transition-property: background;
+	-o-transition-duration: .2s;
+}
+.button-small {
+	font-size: 16px;
+}
+.button:hover, .button-small:hover {
+	color: #FFF;
+	/* CSS3 Transitions */
+	transition-property: background;
+	transition-duration: .2s;
+	-webkit-transition-property: background;
+	-webkit-transition-duration: .2s;
+	-moz-transition-property: background;
+	-moz-transition-duration: .2s;
+	-o-transition-property: background;
+	-o-transition-duration: .2s;
+}
+
+a.button-wrapper, a.button-wrapper:hover, a.button-wrapper:visited, a.button-wrapper:focus {
+	color: black;
+	text-decoration: none;
+	width: 260px;
+	display: block;
+	margin: auto;
+}
+
+#supercontent ol, #supercontent ul {
+	margin-left: 35px;
+}
+
+	#supercontent ol li, #supercontent ul li {
+		margin: 7px auto;
+	}
+	
+#pagedescription {
+	text-align: center;
+	margin: 0 20px 20px 20px;
+}
+
+div#error {
+	width: 300px;
+	margin: 20px auto;
+	padding: 10px;
+	background: #FF595E;
+	border: 1px solid #666;
+	font-weight: bold;
+	display: none;
+	border-radius: 2px;
+	position: relative;
+}
+
+/* Curved Shadows - Verticle */
+/*div#error:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 10px;
+	bottom: 10px;
+	left: 0;
+	right: 50%;
+	right: 0;
+	box-shadow:0 0 20px rgba(0,0,0,0.8);
+	border-radius:100px / 10px;
+}*/
+
+/* Curved Shadows - Horizontal */
+/*div#error:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top:0;
+	bottom:0;
+	left:10px;
+	right:10px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	border-radius: 100px / 10px;
+}*/
+
+/* Lifted Corners Shadows */
+div#error:before, div#error:after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	height: 20%;
+	max-width:300px;
+	
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+   	-o-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+div#error:after {
+	right: 10px;
+	left: auto;
+	-webkit-transform:rotate(3deg);
+	-moz-transform:rotate(3deg);
+   	-o-transform:rotate(3deg);
+	-ms-transform: rotate(3deg);
+	transform:rotate(3deg);
+}
+
+/***********WEBKIT SCROLLBAR***************/
+::-webkit-scrollbar {
+	background: #CCC;
+	width: 7px;
+}
+::-webkit-scrollbar:horizontal {
+	background: #CCC;
+	height: 7px;
+}
+::-webkit-scrollbar-button       {  }
+::-webkit-scrollbar-track        {  }
+::-webkit-scrollbar-track-piece  {  }
+::-webkit-scrollbar-thumb        {
+	background: #666;
+	border-radius: 1px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #333;
+}
+::-webkit-scrollbar-corner       { }
+::-webkit-resizer                { }

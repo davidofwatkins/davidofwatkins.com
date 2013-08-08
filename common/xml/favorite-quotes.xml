@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<favorite-quotes>
+	<quote>
+		<text>Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.</text>
+		<author>Steve Jobs</author>
+		<source></source>
+	</quote>
+	<!--<quote>
+		<text>Life is a balance of holding on and letting go.</text>
+		<author>Keith Urban</author>
+		<source></source>
+	</quote>-->
+        <quote>
+		<text>Music expresses that which can not be said and on which it is impossible to be silent.</text>
+		<author>Victor Hugo</author>
+		<source></source>
+	</quote>
+	<quote>
+		<text>I've always found that sticking your fingers in your ears and humming loudly solves a whole slew of problems</text>
+		<author>Jack O'Neill</author>
+		<source>Stargate SG-1</source>
+	</quote>
+	<quote>
+		<text>To resist the influence of others, knowledge of one's self is most important.</text>
+		<author>Teal'c</author>
+		<source>Stargate SG-1</source>
+	</quote>
+	<quote>
+		<text>Life ain't always beautiful, but it's a beautiful ride.</text>
+		<author>Gary Alan</author>
+		<source></source>
+	</quote>
+	<quote>
+		<text>A computer once beat me at chess, but it was no match for me at kick boxing.</text>
+		<author></author>
+		<source></source>
+	</quote>
+	<quote>
+		<text>Beauty is sincerity.</text>
+		<author>Taylor Swift</author>
+		<source></source>
+	</quote>
+	<quote>
+		<text>The way I see it, if you want the rainbow, you gotta put up with the rain.</text>
+		<author>Dolly Parton</author>
+		<source></source>
+	</quote>
+	<quote>
+		<text>Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning.</text>
+		<author>Rich Cook</author>
+		<source></source>
+	</quote>
+	<quote>
+		<text>Sometimes you don't know where you're from 'till you leave.</text>
+		<author>Tim McGraw</author>
+		<source></source>
+	</quote>
+	<quote>
+		<text>Somewhere between the time you arrive and the time you go may lie the reason you were alive, but you'll never know.</text>
+		<author>Jackson Browne</author>
+		<source></source>
+	</quote>
+	<quote>
+		<text>Do not take life too seriously. You will never get out of it alive.</text>
+		<author>Elbert Hubbard</author>
+		<source></source>
+	</quote>
+	<quote>
+		<text>When we have choices about what to do with our time and in our careers, we have a responsibility to choose the things which put our powers, skills, and experience to their best use. We're obliged to do meaningful work.</text>
+		<author>&lt;a href="http://smarterware.org/8128/obliged-to-do-meaningful-work" /&gt;Gina Trapani&lt;/a&gt;</author>
+		<source></source>
+	</quote>
+        <quote>
+		<text>If at first the idea is not absurd, then there is no hope for it.</text>
+		<author>Albert Einstein</author>
+		<source></source>
+	</quote>
+	<quote>
+		<text>Stay hungry; stay foolish.</text>
+		<author>Steve Jobs</author>
+		<source></source>
+	</quote>
+</favorite-quotes>

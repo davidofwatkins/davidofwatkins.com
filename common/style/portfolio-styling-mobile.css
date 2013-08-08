@@ -1,0 +1,36 @@
+/* CSS Document */
+
+div#project-selector {
+	max-width: 325px;
+	width: 95%;
+}
+	div#project-selector div {
+		//padding: 10px 5px;
+		padding: 10px 0;
+	}
+	div#project-selector div:first-child { width: 22%; }
+	div#project-selector div:nth-child(2) { width: 38%; }
+	div#project-selector div:nth-child(3) { width: 38%; }
+	
+
+div.project_item {
+	margin-bottom: 5px
+}
+	div.project_title {
+		width: auto;
+	}
+	div.project_item div.project_leftside {
+		float: none;
+		width: auto;
+	}
+	div.project_item img.project_img {
+		float: none;
+		margin: 30px auto 0 auto;
+		display: block;
+		max-width: 80%;
+		height: auto;
+	}
+	div.project_item div.button {
+		margin-top: 40px;
+		margin-bottom: 0;
+	}

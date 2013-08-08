@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+<title>404 Page Not Found</title>
+<style>
+	body {
+		font-family: 'Covered By Your Grace', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		background: #000;
+		color: #FFF;
+		text-align: center;
+	}
+	a, a:hover, a:visited, a:active, a:focus {
+		color: inherit;
+		text-decoration: inherit;
+	}
+	h1 {
+		font-size: 50px;
+	}
+	img {
+		border-radius: 20px;
+		margin-bottom: 50px;
+		-webkit-box-reflect: below 1px -webkit-gradient(linear,
+														left top,
+														left bottom,
+														from(transparent),
+														color-stop(80%, transparent),
+														to(rgba(255, 255, 255, 0.5))
+													);
+	}
+	h2 {
+		font-weight: normal;
+		font-size: 30px;
+	}
+	h3 {
+		font-weight: normal;
+		font-size: 25px;
+		margin-bottom: 10px;
+	}
+	form {
+		background: #333;
+		padding: 10px;
+		width: 500px;
+		margin: auto;
+		border-radius: 5px;
+	}
+	form input[type=text] {
+		font-family: 'Covered By Your Grace', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		font-size: 15px;
+		padding: 2px;
+		width: 400px;
+	}
+</style>
+<script type="text/javascript">
+	window.onload = function() {
+		document.getElementById("searchform").onsubmit = function() {
+			var text = document.getElementById("q");
+			if (text.value.indexOf("site:davidofwatkins.com") == -1) {
+				text.value = "site:davidofwatkins.com " + text.value;
+			}
+		};
+		
+		//If "site:davidofwatkins.com" is in the form box already, remove it
+		var text = document.getElementById("q");
+		if (text.value.indexOf("site:davidofwatkins.com ") != -1) {
+			text.value = text.value.replace("site:davidofwatkins.com ", "");
+		}
+	};
+</script>
+</head>
+
+<body>
+	<h1>Error 404: Page Not Found</h1>
+    <img src="/images/404scream.jpg" />
+    <h2>Sorry! <a href="javascript: history.go(-1)">Click here to go back and try another page</a>.</h2>
+    <h3>Or, search davidofwatkins.com from Google:</h3>
+    <form id="searchform" method="get" action="http://google.com/search" >
+    	<input type="text" id="q" name="q" placeholder="Enter your search here...">
+        <input type="submit" value="Search" />
+    </form>
+</body>
+</html>

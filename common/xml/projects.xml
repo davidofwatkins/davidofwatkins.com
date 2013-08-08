@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<projects>
+	<project>
+		<id>ccshuttletracker</id>
+		<name>Rescroller</name>
+		<helpertext>for Google Chrome</helpertext>
+		<description>
+			Rescroller allows you to customize the look and feel of scrollbars on webpages within Google Chrome. Using the included settings, set the color, shadows, borders, etc. of each scrollbar element, or write custom CSS to style the scrollbars manually.
+		</description>
+		<src>https://chrome.google.com/webstore/detail/ddehdnnhjimbggeeenghijehnpakijod</src>
+		<imagepath>images/projects/rescroller.png</imagepath>
+		<category>dev</category>
+		<showimageshadow>true</showimageshadow>
+		<linktolightbox>false</linktolightbox>
+	</project>
+	<project>
+		<id>ccshuttletracker</id>
+		<name>Champlain College Shuttle Tracker</name>
+		<helpertext>for Android&lt;sup&gt;&lt;small&gt;TM&lt;/small&gt;&lt;/sup&gt;</helpertext>
+		<description>
+			The Champlain College Shuttle Tracker displays locations of shuttles and buses at &lt;a href="http://champlain.edu"&gt;Champlain College&lt;/a&gt; that are responsible for transportation between campus, Spinner Place, Quarry Hill, and the Gilbane parking lot. It is an unofficial, mobile, and on-the-go alternative to the desktop web tracker, available at &lt;a href="http://shuttle.champlain.edu" target="_blank"&gt;shuttle.champlain.edu&lt;/a&gt;. I chose to work on this project voluntarily because I believed there should be an easier way to access shuttle information on the go and because it seemed like a good way to begin developing for Android.
+		</description>
+		<src>https://market.android.com/details?id=dwat.ccshuttletracker</src>
+		<imagepath>images/projects/ccshuttletracker.png</imagepath>
+		<category>dev</category>
+		<showimageshadow>true</showimageshadow>
+		<linktolightbox>false</linktolightbox>
+	</project>
+	
+	<project>
+		<id>dowwebsite</id>
+		<name>DavidOfWatkins</name>
+		<helpertext>.com</helpertext>
+		<description>
+			DavidOfWatkins.com is a centralized hub of my work and online identities. I built it from the ground up through web technologies such as PHP, Javascript, XML, and others, and it's given me the opportunity to continually expand my web development skills. The site will remain updated as I work on new projects, update my bio, or have new content to add.
+		</description>
+		<src></src>
+		<imagepath>images/projects/dowdotcom.png</imagepath>
+		<category>dev</category>
+		<showimageshadow>true</showimageshadow>
+		<linktolightbox>false</linktolightbox>
+	</project>
+	
+	<project>
+		<id>gmmsite</id>
+		<name>Green Mountain Mules</name>
+		<helpertext>(Website)</helpertext>
+		<description>
+			As a team for a web e-commerce class, two other developers and I created a website and online trading store for mule-focused farming equipment and services. In addition to providing a blog and standard informaitonal pages for the website owners to maintain, the site also allows members to log in and post products and services for sale or trade. The site was built on WordPress, and my team designed and built many additional features from the ground up through PHP, MySQL, Javascript, etc.
+		</description>
+		<src>http://greenmountainmules.com</src>
+		<imagepath>images/projects/gmm.png</imagepath>
+		<category>dev</category>
+		<showimageshadow>true</showimageshadow>
+		<linktolightbox>false</linktolightbox>
+	</project>
+	
+	<project>
+		<id>2pchess</id>
+		<name>Two-Player Chess</name>
+		<helpertext>(Java Application)</helpertext>
+		<description>
+			This simple game allows two individuals to play against each other in a game of chess, much like the built-in chess game on Windows. It was one of my first decently sized programming projects, so there are admittedly still a few remaining bugs that were never fully dealt with. But, if you would like to try it out, extract the .zip file and execute the &lt;code&gt;chess.jar&lt;/code&gt; file.
+		</description>
+		<src>http://code.google.com/p/davids-chess-game/downloads/detail?name=chess.zip</src>
+		<imagepath>images/projects/chess.png</imagepath>
+		<category>dev</category>
+		<showimageshadow>true</showimageshadow>
+		<linktolightbox>false</linktolightbox>
+	</project>
+	
+	<project>
+		<id>nyccafe</id>
+		<name>NYC Cafe</name>
+		<helpertext>(Website)</helpertext>
+		<description>
+			I worked on this site voluntarily as one of my first web development projects before having any server- or client-side programming skills. I am good friends with the family that owns it, and I continue to help out with miscellaneous technical issues and requests when I can.
+		</description>
+		<src>http://www.nyccafesanjuan.com</src>
+		<imagepath>images/projects/nycweb.png</imagepath>
+		<category>dev</category>
+		<showimageshadow>true</showimageshadow>
+		<linktolightbox>false</linktolightbox>
+	</project>
+	
+	<project>
+		<id>whysitfeelsolong</id>
+		<name>"Why's It Feel So Long"</name>
+		<helpertext>(Video)</helpertext>
+		<description>
+			As a personal side-project, I filmed a short music video of my dog, waiting around an empty house for his family to return home. Keith Urban's song, "Why's It Feel So Long," gave me the idea for the video because, although it may not have been written for this scenario, the concept seemed to fit perfectly.
+		</description>
+		<src>http://www.youtube.com/embed/RhVGdLwhZg8?autoplay=1</src>
+		<mobilesrc>http://www.youtube.com/watch?v=RhVGdLwhZg8</mobilesrc>
+		<imagepath>images/projects/whysitfeelsolong.png</imagepath>
+		<category>hobby</category>
+		<showimageshadow>true</showimageshadow>
+		<linktolightbox>true</linktolightbox>
+	</project>
+	
+	<project>
+		<id>devincentwedding</id>
+		<name>"Captured Moments"</name>
+		<helpertext> - DeVincents' Wedding</helpertext>
+		<description>
+			My sister was married in Cozumel, Mexico on June 18, 2010. She and her husband asked me to film and document the festvities of the family vacation, and I was happy to oblige. I created two videos: an overview of the entire week ("Captured Moments") and a recording of the wedding, itself. Needless to say, documenting the trip was a lot of fun!
+		</description>
+		<src>http://watkinsca.com/cozumelwedding</src>
+		<imagepath>images/projects/capturedmoments.png</imagepath>
+		<category>hobby</category>
+		<showimageshadow>true</showimageshadow>
+		<linktolightbox>false</linktolightbox>
+	</project>
+	
+	<project>
+		<id>drivinglaguna</id>
+		<name>"Driving Through Laguna"</name>
+		<helpertext>(Video)</helpertext>
+		<description>
+			During the summer of 2009, I headed to Laguna Beach, CA and taped a Flip MinoHD camcorder onto the roof of my car while driving along the coast.
+		</description>
+		<src>http://www.youtube.com/embed/jVCHrxsOAGU?autoplay=1</src>
+		<mobilesrc>http://www.youtube.com/watch?v=jVCHrxsOAGU</mobilesrc>
+		<imagepath>images/projects/drivingthroughlaguna.png</imagepath>
+		<category>hobby</category>
+		<showimageshadow>true</showimageshadow>
+		<linktolightbox>true</linktolightbox>
+	</project>
+</projects>
