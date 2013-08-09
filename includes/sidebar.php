@@ -50,12 +50,15 @@
 		
 		function animateButton_on(button, newMarginLeft) {
 			
-			//Change button image
-			var originalSrc = button.attr("src");
-			button.attr("src", originalSrc.replace("_off", "_on"));
-			
-			//Animate button position
-			button.animate({ "margin-left" : newMarginLeft }, "fast");
+			if (button) {
+
+				//Change button image
+				var originalSrc = button.attr("src");
+				button.attr("src", originalSrc.replace("_off", "_on"));
+				
+				//Animate button position
+				button.animate({ "margin-left" : newMarginLeft }, "fast");
+			}
 		}
 		
 		function animateButton_off(button, newMarginLeft) {
@@ -90,7 +93,6 @@
 	});
 </script>
 <div id="sidebar">
-    
 	<div class="fixedsidebar">        
     	<h1>More DW:</h1>
         <div id="more-dw">
@@ -105,35 +107,9 @@
                     <!-- Using iframe version of facebook subscribe button because the HTML5 and XBML versions have difficulty loading when display = none -->
                     <iframe src="//www.facebook.com/plugins/subscribe.php?href=https%3A%2F%2Fwww.facebook.com%2Fdavidofwatkins&amp;layout=button_count&amp;show_faces=true&amp;colorscheme=light&amp;font&amp;width=120" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px;" allowTransparency="true"></iframe>
                 </div>
-                <div class="socialpopup-content" id="twitter-popup-content" width="250" height="390">
-                    <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-                    <script>
-                    new TWTR.Widget({
-                      version: 2,
-                      type: 'profile',
-                      rpp: 4,
-                      interval: 30000,
-                      width: 250,
-                      height: 300,
-                      theme: {
-                        shell: {
-                          background: '#4a4a4a',
-                          color: '#ffffff'
-                        },
-                        tweets: {
-                          background: '#7a7a7a',
-                          color: '#ffffff',
-                          links: '#95C9FD'
-                        }
-                      },
-                      features: {
-                        scrollbar: false,
-                        loop: false,
-                        live: true,
-                        behavior: 'all'
-                      }
-                    }).render().setUser('dwat91').start();
-                    </script>
+                <div class="socialpopup-content" id="twitter-popup-content" width="350" height="367">
+					<a class="twitter-timeline" href="https://twitter.com/dwat91" data-widget-id="365730330562412545">Tweets by @dwat91</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </div>
                 <div class="socialpopup-content" id="linkedin-popup-content" height="105" width="355" style="margin: -10px 0 0 -8px;">
                     <div id="linkedinbordercover"></div>
