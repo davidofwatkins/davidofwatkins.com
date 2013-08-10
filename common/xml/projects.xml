@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <projects>
 	<project>
-		<id>ccshuttletracker</id>
+		<id>accessburlington</id>
+		<name>Access Burlington</name>
+		<helpertext></helpertext>
+		<description>
+			AccessBurlington is a portal for easy access to information for residents, visitors, and students in and around the Burlington, VT area. As a member of the team, I've been responsible for many of the site's back-end features, including the database, search, administrative tools, and more.
+		</description>
+		<src>http://accessburlington.com</src>
+		<imagepath>images/projects/accessburlington.png</imagepath>
+		<category>dev</category>
+		<showimageshadow>true</showimageshadow>
+		<linktolightbox>false</linktolightbox>
+	</project>
+	<project>
+		<id>longlivechamplain</id>
+		<name>Long Live Champlain</name>
+		<helpertext>Video</helpertext>
+		<description>
+			It's hard to believe how quickly my four years of college have past, yet I could not have asked for a better four. For several weeks, I dug through hours of gigabytes of video that I had recorded from my freshman through senior years in order to create one video that embodies my college experience. For those who attended Champlain with me, I hope watching this makes you smile as much as making it made me. For everyone else, I'd like to introduce you to my friends. Long live!
+		</description>
+		<src>http://www.youtube.com/embed/KZp7tDk7Sag?autoplay=1</src>
+		<mobilesrc>http://www.youtube.com/watch?v=KZp7tDk7Sag</mobilesrc>
+		<imagepath>images/projects/longlivecc.png</imagepath>
+		<category>hobby</category>
+		<showimageshadow>true</showimageshadow>
+		<linktolightbox>true</linktolightbox>
+	</project>
+	<project>
+		<id>cchousing</id>
+		<name>Champlain College Housing Registration</name>
+		<helpertext>WebApp</helpertext>
+		<description>
+			As a college capstone project, this Champlain College housing registration web application is a working proof-of-concept that would allow students to research campus residence halls, browse the layout for each room, find halls' distance to central campus, choose roommates, and more. On the administrative side, management could upload images for each hall and dynamically specify rooms by "drawing" onto uploaded floorplan images. If the app were finalized and maintained, it could save college residential life departments time and money.
+		</description>
+		<src>http://dev.davidofwatkins.com/cchousing</src>
+		<imagepath>images/projects/cchousing_icon.png</imagepath>
+		<category>dev</category>
+		<showimageshadow>true</showimageshadow>
+		<linktolightbox>false</linktolightbox>
+	</project>
+	<project>
+		<id>rescroller</id>
 		<name>Rescroller</name>
 		<helpertext>for Google Chrome</helpertext>
 		<description>
