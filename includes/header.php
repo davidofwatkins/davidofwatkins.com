@@ -97,9 +97,14 @@
         var profilePics = <?= json_encode($profilePics) ?>;
         $(document).ready(function() {
             setInterval(function() {
-                var random = Math.floor((Math.random() * profilePics.length)); //random between 0 and size of array
-                switchProfilePicTo(profilePics[random]);
+                switchProfilePic(profilePics);
             }, 60000);
+
+            //When user clicks the image, rotate it manually
+            $("div#header img").click(function() {
+                switchProfilePic(profilePics);
+                return false;
+            })
         });
     </script>
 
@@ -138,7 +143,7 @@
 	?>
     
     
-	<div id="header"><div id="hcontainer"><a href="/"><img src="/<?php echo $profilePics[$random] ?>" width="146" height="176"></a>
+	<div id="header"><div id="hcontainer"><a href="#"><img src="/<?php echo $profilePics[$random] ?>" width="146" height="176"></a>
 	<h1>davidofwatkins.com</h1></div></div>
     <?php include("includes/navbar.php"); ?>
     <div id="container">
