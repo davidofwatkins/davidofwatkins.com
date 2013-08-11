@@ -17,7 +17,7 @@
 #container {
 	width: 960px;
 	margin: 20px auto 0 auto;
-	overflow: hidden;
+	//overflow: hidden;
 }
 	#sidebar {
 		width: 70px; /*was 189 */
@@ -32,6 +32,7 @@
 	#supercontent {
 		width: 879px;
 		float: left;
+		min-height: 485px;
 	}
 		#content {
 			padding: 0 10px 10px 15px;
