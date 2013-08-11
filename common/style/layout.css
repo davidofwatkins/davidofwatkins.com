@@ -53,7 +53,9 @@
 		text-align: center;
 		color: #666;
 		font-family: "Rancho";
-		margin: auto 30px;
+		/* margin: auto 30px; */
+		margin: auto;
+		max-width: 885px;
 		font-size: 22px;
 	}
 .clearfloats { clear: both; }
