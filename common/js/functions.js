@@ -24,3 +24,14 @@ function ajaxCall(url) {
     });
     
 }
+
+function switchProfilePicTo(url) {
+
+  var image = $("div#header img");
+
+  image.fadeOut("fast", function() {
+    image.attr("src", url);
+    image.fadeIn("fast");
+  });
+  
+}
