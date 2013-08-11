@@ -40,7 +40,7 @@
     <meta property="og:title" content="David Of Watkins" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://davidofwatkins.com" />
-    <meta property="og:image" content="http://davidofwatkins.com/images/profileicon-perminent.png" />
+    <meta property="og:image" content="http://davidofwatkins.com/images/profileicon-perminent.jpg" />
     <meta property="og:site_name" content="David Of Watkins" />
     <meta property="fb:admins" content="599009326" />
     
