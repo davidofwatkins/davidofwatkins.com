@@ -307,7 +307,7 @@ a.button-wrapper, a.button-wrapper:hover, a.button-wrapper:visited, a.button-wra
 .button {
 	display: inline-block;
 	text-align: center;
-	margin: 30px 10px 5px;
+	margin: 15px;
 	padding: 4px 30px;
 	background: rgb(53, 158, 255);
 	border: 1px solid gray;

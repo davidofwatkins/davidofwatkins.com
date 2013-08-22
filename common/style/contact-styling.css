@@ -49,3 +49,7 @@ div#senderinfo {
 		margin-bottom: 5px;
 		display: inline-block;
 	}
+
+input.button {
+	cursor: pointer;
+}

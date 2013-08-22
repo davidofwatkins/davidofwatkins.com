@@ -18,7 +18,7 @@
 				height: 1100px;
 			}
 		</style>
-        <a class="button-wrapper" href="/downloads/resume.pdf"><div class="button-small">Download (PDF)</div></a>
+        <div style="text-align: center;"><a id="get-resume" class="button" href="/downloads/resume.pdf">Download (PDF)</a></div>
         <?php
         	if (!isMobile()) {
 				echo '<iframe id="resume" src="http://docs.google.com/viewer?url=http%3A%2F%2F' . siteroot . '%2Fdownloads%2Fresume.pdf&embedded=true"  style="border: none;"></iframe>';

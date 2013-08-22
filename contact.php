@@ -116,7 +116,7 @@
                 <h2 underline="off">Please leave your message below:</h2>
                 <textarea id="sender_message" name="sender_message" cols="70" rows="20" style="margin-left: auto; margin-right: auto;" placeholder="Write me something, here! Anything!" ></textarea>
                 <div style="width: 100%;"></div> <!--Accounts for Firefox 4 textbox resizing-->
-    		<input type="submit" class="button-small" value="Send" />
+    		<input type="submit" class="button" value="Send" />
           </form>
         </center>
     </div></div>

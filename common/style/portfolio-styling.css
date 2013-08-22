@@ -110,6 +110,10 @@ div#project-selector {
 	font-size: 13px;
 }
 
+.project_item .button {
+	margin: 30px 10px 5px;
+}
+
 /* Checkbox layout: */
 #project-filters {
 	width: 315px;
