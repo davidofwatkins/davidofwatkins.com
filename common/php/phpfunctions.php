@@ -145,7 +145,7 @@
 	* Project Generation  *
 	**********************/
 	
-	//Used to generate the list of projects on the Portfolio page
+	//Depricated
 	function getProjectsFromXML() {
 		$xml = simplexml_load_file("common/xml/projects.xml") or die("Could not access Projects XML");
 		
@@ -203,6 +203,30 @@ _endhtml_;
 		}
 		
 		return $output;
+		
+	}
+
+	function getPortfolioProjects() {
+		$xml = simplexml_load_file("common/xml/projects.xml") or die("Could not access Projects XML");
+		
+		$projects = json_decode(json_encode($xml), TRUE); //hacky way to convert the simplexml object to a simple php array
+		$projects = $projects["project"];
+
+		//Make some adjustments...
+		foreach ($projects as &$project) {
+
+			$project = array_filter($project); //remove empty arrays
+
+			//Replace src with mobile src if appropriate
+			if (isset($project["mobilesrc"]) && isMobile()) {
+				$project["src"] = $project["mobilesrc"];
+				unset($project["mobilesrc"]);
+			}
+
+			//
+		}
+
+		return $projects;
 		
 	}
 ?>

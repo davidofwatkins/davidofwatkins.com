@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <projects>
 	<project>
+		<id>rescroller-ext</id>
+		<name>Rescroller</name>
+		<helpertext>for Google Chrome</helpertext>
+		<description>
+			&lt;a href="http://lifehacker.com/rescroller-customizes-everything-about-chromes-scrollb-1073185767" target="_blank"&gt;Reviewed on Lifehacker&lt;/a&gt; and &lt;a href="http://www.ghacks.net/2013/07/30/change-the-size-and-style-of-google-chromes-scrollbar-with-rescroller/" target="_blank"&gt;GHacks&lt;/a&gt;, Rescroller allows you to customize the look and feel of scrollbars on webpages within Google Chrome. Using the included settings, set the color, shadows, borders, etc. of each scrollbar element, or write custom CSS to style the scrollbars manually.
+		</description>
+		<src>https://chrome.google.com/webstore/detail/ddehdnnhjimbggeeenghijehnpakijod</src>
+		<imagepath>images/projects/rescroller.png</imagepath>
+		<category>dev</category>
+		<showimageshadow>true</showimageshadow>
+		<linktolightbox>false</linktolightbox>
+	</project>
+	<project>
 		<id>accessburlington</id>
 		<name>Access Burlington</name>
-		<helpertext></helpertext>
+		<helpertext>.com</helpertext>
 		<description>
 			AccessBurlington is a portal for easy access to information for residents, visitors, and students in and around the Burlington, VT area. As a member of the team, I've been responsible for many of the site's back-end features, including the database, search, administrative tools, and more.
 		</description>
@@ -29,26 +42,13 @@
 	</project>
 	<project>
 		<id>cchousing</id>
-		<name>Champlain College Housing Registration</name>
+		<name>Champlain College Housing Registrar</name>
 		<helpertext>WebApp</helpertext>
 		<description>
 			As a college capstone project, this Champlain College housing registration web application is a working proof-of-concept that would allow students to research campus residence halls, browse the layout for each room, find halls' distance to central campus, choose roommates, and more. On the administrative side, management could upload images for each hall and dynamically specify rooms by "drawing" onto uploaded floorplan images. If the app were finalized and maintained, it could save college residential life departments time and money.
 		</description>
 		<src>http://dev.davidofwatkins.com/cchousing</src>
 		<imagepath>images/projects/cchousing_icon.png</imagepath>
-		<category>dev</category>
-		<showimageshadow>true</showimageshadow>
-		<linktolightbox>false</linktolightbox>
-	</project>
-	<project>
-		<id>rescroller</id>
-		<name>Rescroller</name>
-		<helpertext>for Google Chrome</helpertext>
-		<description>
-			Rescroller allows you to customize the look and feel of scrollbars on webpages within Google Chrome. Using the included settings, set the color, shadows, borders, etc. of each scrollbar element, or write custom CSS to style the scrollbars manually.
-		</description>
-		<src>https://chrome.google.com/webstore/detail/ddehdnnhjimbggeeenghijehnpakijod</src>
-		<imagepath>images/projects/rescroller.png</imagepath>
 		<category>dev</category>
 		<showimageshadow>true</showimageshadow>
 		<linktolightbox>false</linktolightbox>
@@ -141,7 +141,7 @@
 	<project>
 		<id>devincentwedding</id>
 		<name>"Captured Moments"</name>
-		<helpertext> - DeVincents' Wedding</helpertext>
+		<helpertext> - DeVincent Wedding Video</helpertext>
 		<description>
 			My sister was married in Cozumel, Mexico on June 18, 2010. She and her husband asked me to film and document the festvities of the family vacation, and I was happy to oblige. I created two videos: an overview of the entire week ("Captured Moments") and a recording of the wedding, itself. Needless to say, documenting the trip was a lot of fun!
 		</description>
