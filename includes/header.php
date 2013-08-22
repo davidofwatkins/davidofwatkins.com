@@ -43,6 +43,24 @@
     <meta property="og:image" content="http://davidofwatkins.com/images/profileicon-perminent.jpg" />
     <meta property="og:site_name" content="David Of Watkins" />
     <meta property="fb:admins" content="599009326" />
+
+    <!-- Twitter Card Meta Info -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@dwat91">
+    <meta name="twitter:title" content="David Watkins">
+    <meta name="twitter:description" content="I'm David Watkins: developer, music lover, video editor, and tech enthusiast. I received my Bachelor of Science degree in Computer Information Technology with a minor in Web Development at #campchamp in Burlington, VT in 2013.">
+    <meta name="twitter:creator" content="@dwat91">
+    <meta name="twitter:image:src" content="http://davidofwatkins.com/images/profileicon-perminent.jpg">
+    <meta name="twitter:domain" content="davidofwatkins.com">
+    <meta name="twitter:app:name:iphone" content="">
+    <meta name="twitter:app:name:ipad" content="">
+    <meta name="twitter:app:name:googleplay" content="">
+    <meta name="twitter:app:url:iphone" content="">
+    <meta name="twitter:app:url:ipad" content="">
+    <meta name="twitter:app:url:googleplay" content="">
+    <meta name="twitter:app:id:iphone" content="">
+    <meta name="twitter:app:id:ipad" content="">
+    <meta name="twitter:app:id:googleplay" content="">
     
     <!-- Chrome Frame -->
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
