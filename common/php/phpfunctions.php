@@ -144,67 +144,6 @@
 	/**********************
 	* Project Generation  *
 	**********************/
-	
-	//Depricated
-	function getProjectsFromXML() {
-		$xml = simplexml_load_file("common/xml/projects.xml") or die("Could not access Projects XML");
-		
-		$output = "";
-		
-		foreach ($xml as $project) {
-			
-			$src;
-			if ($project->mobilesrc && isMobile()) {
-				$src = $project->mobilesrc;
-			}
-			else { $src = $project->src; }
-			
-			$output .= <<<_endhtml_
-			<div class="project_item" id="$project->id" projtype="$project->category">
-				<div class="project_leftside">
-					<div class="project_title">$project->name <small>$project->helpertext</small></div>
-					<p class="project_description">$project->description</p>
-_endhtml_;
-
-				//"View Project" Button
-				if (!isMobile()) { //Print the button for desktop only here
-					if ($src != "") {
-						$output .= '<a class="button-wrapper" href="' . $src . '" target="_blank"';
-						if ($project->linktolightbox == "true") { $output .= 'rel="shadowbox;height=510;width=853" title="' . $project->name . '"'; }
-						$output .= ' ><div class="button">View Project</div></a>';
-					}
-					$output .= '</div>';
-				}
-				
-				//Image
-				if ($src != "") {
-					$output .= '<a href="' . $src . '" target="_blank"';
-					if ($project->linktolightbox == "true") { $output .= 'rel="shadowbox;height=510;width=853" title="' . $project->name . '"'; }
-					$output .= '>';
-				}
-				$output .= '<img class="project_img" src="'. $project->imagepath . '"';
-				if ($project->showimageshadow == "false") { $output .= 'style="box-shadow: none;"'; }
-				$output .= ' />';
-				if ($src != "") {
-					$output .= '</a>';
-				}
-				
-				//"View Project" Button
-				if (isMobile()) { //Print the button for mobile only here
-					if ($src != "") {
-						$output .= '<a class="button-wrapper" href="' . $src . '" target="_blank"';
-						if ($project->linktolightbox == "true") { $output .= 'rel="shadowbox;height=510;width=853" title="' . $project->name . '"'; }
-						$output .= ' ><div class="button">View Project</div></a>';
-					}
-					$output .= '</div>';
-				}
-				
-				$output .= '<div class="clearfloats"></div></div>';
-		}
-		
-		return $output;
-		
-	}
 
 	function getPortfolioProjects() {
 		$xml = simplexml_load_file("common/xml/projects.xml") or die("Could not access Projects XML");
