@@ -3,16 +3,16 @@
     
 <?php
 
-echo '<link href="/common/style/portfolio-styling.css" rel="stylesheet" type="text/css" />';
-echo '<script type="text/javascript" src="/common/js/jquery.isotope.min.js"></script>';
+echo '<link href="' . SITEROOT . 'common/style/portfolio-styling.css" rel="stylesheet" type="text/css" />';
+echo '<script type="text/javascript" src="' . SITEROOT . 'common/js/jquery.isotope.min.js"></script>';
 echo '<link href="http://fonts.googleapis.com/css?family=Medula+One" rel="stylesheet" type="text/css">';
 if (!isMobile()) {
-	echo '<link rel="stylesheet" type="text/css" href="/common/shadowbox/shadowbox.css">';
-    echo '<script type="text/javascript" src="/common/shadowbox/shadowbox.js"></script>';
+	echo '<link rel="stylesheet" type="text/css" href="' . SITEROOT . 'common/shadowbox/shadowbox.css">';
+    echo '<script type="text/javascript" src="' . SITEROOT . 'common/shadowbox/shadowbox.js"></script>';
     echo '<script type="text/javascript">Shadowbox.init();</script>';
 }
 else {
-	echo '<link href="/common/style/portfolio-styling-mobile.css" rel="stylesheet" type="text/css" />';
+	echo '<link href="' . SITEROOT . 'common/style/portfolio-styling-mobile.css" rel="stylesheet" type="text/css" />';
 }
 
 ?>

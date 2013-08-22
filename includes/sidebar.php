@@ -118,16 +118,13 @@
                 </div>
             </div>
         
-        	<a href="https://plus.google.com/104494880066441442910/about" class="moredw-link" for="gplus" target="_blank" ><img src="/images/linkicons/googleplus_off.png" /></a>
-            <a href="http://www.facebook.com/davidofwatkins" class="moredw-link" for="facebook" target="_blank" ><img src="/images/linkicons/facebook_off.png" /></a>
-            <a href="http://twitter.com/dwat91" class="moredw-link" for="twitter" target="_blank" ><img src="/images/linkicons/twitter_off.png" /></a>
-            <a href="http://www.linkedin.com/in/davidofwatkins" for="linkedin" class="moredw-link" target="_blank" ><img src="/images/linkicons/linkedin_off.png" /></a>
+        	<a href="https://plus.google.com/104494880066441442910/about" class="moredw-link" for="gplus" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/googleplus_off.png" /></a>
+            <a href="http://www.facebook.com/davidofwatkins" class="moredw-link" for="facebook" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/facebook_off.png" /></a>
+            <a href="http://twitter.com/dwat91" class="moredw-link" for="twitter" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/twitter_off.png" /></a>
+            <a href="http://www.linkedin.com/in/davidofwatkins" for="linkedin" class="moredw-link" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/linkedin_off.png" /></a>
         </div>
         <div id="likebuttons">
-        	<!-- HTML5 version of Google+/Facebook plugins breaks internet explorer :( -->
-            <!--<center><div class="g-plusone" data-href="//davidofwatkins.com" data-size="tall" data-annotation="bubble" data-width="120"></center>
-            <center><div class="fb-like" data-href="http://davidofwatkins.com" data-send="false" data-layout="box_count" data-width="44" data-show-faces="true"></div></center>-->
-            <center><g:plusone href="http://davidofwatkins.com" size="tall" annotation="bubble" width="120"></g:plus></center>
+        	<center><g:plusone href="http://davidofwatkins.com" size="tall" annotation="bubble" width="120"></g:plus></center>
             <center><fb:like href="http://davidofwatkins.com" send="false" layout="box_count" width="44" show_faces="true"></fb:like></center>
         </div>
 	</div>

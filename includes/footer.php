@@ -5,7 +5,7 @@
     </div>
     <div id="footer">
     	<div id="footernav">
-    		<a href="/">Home</a> &bull; <a href="/portfolio">Portfolio</a> &bull; <a href="/resume">Resume</a> &bull; <a href="/contact">Contact Me</a>
+    		<a href="<?= SITEROOT ?>">Home</a> &bull; <a href="<?= SITEROOT ?>portfolio">Portfolio</a> &bull; <a href="<?= SITEROOT ?>resume">Resume</a> &bull; <a href="<?= SITEROOT ?>contact">Contact Me</a>
         </div>
         <?php
         	

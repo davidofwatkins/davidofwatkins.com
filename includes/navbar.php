@@ -50,9 +50,9 @@
 	}
 </script>
 <div id=topshadow><div id="navbar">
-        <a href="/"><div class="li" <?php if ($currentFile == "index.php") { echo 'id="currentpage"'; } ?>>Welcome</div></a>
-        <a href="/portfolio"><div class="li" <?php if ($currentFile == "portfolio.php") { echo 'id="currentpage"'; } ?>>Portfolio</div></a>
-        <a href="/resume"><div class="li" <?php if ($currentFile == "resume.php") { echo 'id="currentpage"'; } ?>>Resume</div></a>
-        <a href="/contact"><div class="li" <?php if ($currentFile == "contact.php") { echo 'id="currentpage"'; } ?>><?php if (!isMobile()) { echo "Contact Me"; } else { echo "Contact"; } ?></div></a>
+        <a href="<?= SITEROOT ?>"><div class="li" <?php if ($currentFile == "index.php") { echo 'id="currentpage"'; } ?>>Welcome</div></a>
+        <a href="<?= SITEROOT ?>portfolio"><div class="li" <?php if ($currentFile == "portfolio.php") { echo 'id="currentpage"'; } ?>>Portfolio</div></a>
+        <a href="<?= SITEROOT ?>resume"><div class="li" <?php if ($currentFile == "resume.php") { echo 'id="currentpage"'; } ?>>Resume</div></a>
+        <a href="<?= SITEROOT ?>contact"><div class="li" <?php if ($currentFile == "contact.php") { echo 'id="currentpage"'; } ?>><?php if (!isMobile()) { echo "Contact Me"; } else { echo "Contact"; } ?></div></a>
 		<div class="clearfloats"></div>
 </div></div>

@@ -4,9 +4,9 @@
 ?>
 <?php include("includes/header.php");
 	
-	echo '<link href="/common/style/contact-styling.css" rel="stylesheet" type="text/css" />';
+	echo '<link href="' . SITEROOT . 'common/style/contact-styling.css" rel="stylesheet" type="text/css" />';
 	if (isMobile()) {
-		echo '<link href="/common/style/contact-styling-mobile.css" rel="stylesheet" type="text/css" />';
+		echo '<link href="' . SITEROOT . 'common/style/contact-styling-mobile.css" rel="stylesheet" type="text/css" />';
 	}
 ?>
 	<script>
@@ -14,7 +14,7 @@
 		function AJAXSubmit() {
 			
 			if (validateForm()) {
-				$.post("/common/php/emailer.php", $("form#contact").serialize(), function(data) {
+				$.post("<?= SITEROOT ?>/common/php/emailer.php", $("form#contact").serialize(), function(data) {
 					if (data == "sent") {
 						//Replace HTML with confirmation
 						$("#content").fadeOut("slow", function() {
