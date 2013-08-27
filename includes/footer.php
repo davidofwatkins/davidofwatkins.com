@@ -1,6 +1,6 @@
 <div class="clearfloats"></div>
     
-    <?php if ($_REQUEST["mode"] != "ajax"): //Do not show footer if getting page via AJAX ?>
+    <?php if ((!isset($_REQUEST["mode"]) || $_REQUEST["mode"] != "ajax")): //Do not show footer if getting page via AJAX ?>
     
     </div>
     <div id="footer">

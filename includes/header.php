@@ -8,7 +8,7 @@
 	recordVisitorDetails();
 
 	//Allow for IE 8 or below if the user's consented.
-	if ($_GET["ie"] == "allowed" || $_COOKIE["ieallowed"] == "true") {
+	if ((isset($_GET["ie"]) && $_GET["ie"] == "allowed") || (isset($_COOKIE["ieallowed"]) && $_COOKIE["ieallowed"] == "true")) {
 		setcookie("ieallowed", "true", time() + 2592000); //30 days
 	}
 	
@@ -23,8 +23,7 @@
 	$random = rand() % $range;
 ?>
 
-<?php if($_REQUEST["mode"] != "ajax"): //Do not include header info if page is being accessed via AJAX ?>
-
+<?php if(!isset($_REQUEST["mode"]) || $_REQUEST["mode"] != "ajax"): //Do not include header info if page is being accessed via AJAX ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Person"><head>
     <meta charset=utf-8" />
@@ -93,7 +92,7 @@
         echo '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, text-size=normal">';
 	?>
     
-    <?php echo $EXTRA_HEAD; ?>
+    <?php if (isset($EXTRA_HEAD)) echo $EXTRA_HEAD; ?>
     
     <?php if (isset($_GET["harlem"])): ?>
     <!-- Harlem Shake easter egg -->
