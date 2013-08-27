@@ -1,3 +1,4 @@
+
 <?php $TITLE = "David Watkins - Portfolio"; ?>
 <?php include("includes/header.php"); ?>
     
@@ -10,9 +11,6 @@ if (!isMobile()) {
 	echo '<link rel="stylesheet" type="text/css" href="' . SITEROOT . 'common/shadowbox/shadowbox.css">';
     echo '<script type="text/javascript" src="' . SITEROOT . 'common/shadowbox/shadowbox.js"></script>';
     echo '<script type="text/javascript">Shadowbox.init();</script>';
-}
-else {
-	echo '<link href="' . SITEROOT . 'common/style/portfolio-styling-mobile.css" rel="stylesheet" type="text/css" />';
 }
 
 ?>
@@ -32,6 +30,12 @@ else {
             else
                  $('#projects').isotope({ filter: '.none' });
 		});
+
+        //Responsive Design Helper
+        $(window).resize(function() {
+            if ($("#projects").outerWidth() <= 959)
+                $("#projects").isotope("reLayout"); //Allows for changing height of .project_item's
+        });
 	});
 
     window.addEventListener("load", function() {
@@ -73,7 +77,7 @@ else {
 
         	foreach ($projects as $project):
 
-        	if ($project["linktolightbox"] == "true") {
+        	if ($project["linktolightbox"] == "true" && !isMobile()) {
         		$project["lightboxtext"] = 'rel="shadowbox;height=510;width=853" title="' . $project["name"] . '"';
         	}	
         ?>

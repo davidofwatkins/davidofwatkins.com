@@ -31,13 +31,17 @@ function switchProfilePic(picsArray) {
   var oldSrc = image.attr("src");
   var random = null;
 
+  if (image.css("display") == "none") return false;
+
   while (random == null || picsArray[random] == oldSrc) { //ensures the next chosen image isn't the same as the last
     random = Math.floor((Math.random() * picsArray.length)); //random between 0 and size of array
   }
 
   image.fadeOut("fast", function() {
     image.attr("src", picsArray[random]);
-    image.fadeIn("fast");
+    image.fadeIn("fast", function() {
+      image.css("display", "");
+    });
   });
   
 }

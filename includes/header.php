@@ -83,24 +83,14 @@
     <?php
 		echo '<link href="' . SITEROOT . 'common/style/layout.css" rel="stylesheet" type="text/css" />';
         echo '<link href="' . SITEROOT .'common/style/style.css" rel="stylesheet" type="text/css" />';
+         echo '<link href="' . SITEROOT .'common/style/responsive.css" rel="stylesheet" type="text/css" />';
 	
-        //Attach CSS for mobile or destkop clients:
-        if (isMobile()) {
-            echo '<link href="' . SITEROOT . 'common/style/layout-mobile.css" rel="stylesheet" type="text/css" />';
-            echo '<link href="' . SITEROOT . 'common/style/style-mobile.css" rel="stylesheet" type="text/css" />';
-        }
-        else {
-            
-			if (!isTablet()) { echo '<script type="text/javascript" src="' . SITEROOT . 'common/js/fixedsidebar.js"></script>'; }
-			echo '<script type="text/javascript" src="' . SITEROOT . 'common/js/desktop-js-functions.js"></script>';
-        }
+		if (!isTablet()) { echo '<script type="text/javascript" src="' . SITEROOT . 'common/js/fixedsidebar.js"></script>'; }
+		echo '<script type="text/javascript" src="' . SITEROOT . 'common/js/desktop-js-functions.js"></script>';
     ?>
     
     <?php
-    	if (isMobile()) {
-			//Set viewport for mobile only
-			echo '<meta name="viewport" content="width=device-width, initial-scale=1.0" />';
-		}
+        echo '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, text-size=normal">';
 	?>
     
     <?php echo $EXTRA_HEAD; ?>
@@ -162,9 +152,9 @@
     
     
 	<div id="header"><div id="hcontainer"><a href="#"><img src="<?php echo SITEROOT . $profilePics[$random] ?>" width="146" height="176"></a>
-	<h1>davidofwatkins.com</h1></div></div>
+	<h1>davidofwatkins<span id="header-suffix">.com</span></h1></div></div>
     <?php include("includes/navbar.php"); ?>
     <div id="container">
-    	<?php if (!isMobile()) { include("includes/sidebar.php"); } //including sidebar on mobile messes with the viewport! ?>
+    	<?php include("includes/sidebar.php"); ?>
 	
 <?php endif; ?>

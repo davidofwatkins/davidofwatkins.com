@@ -17,12 +17,25 @@
 				width: 100%;
 				height: 1100px;
 			}
+
+			/* Tablet (Portrait) 	768px */
+			@media only screen and (min-width: 768px) and (max-width: 959px) {
+				#resume { height: 1050px !important; }
+			}
+
+			/* Mobile (Landscape) 	480px */
+			@media only screen and (min-width: 480px) and (max-width: 767px) { 
+				#resume { height: 955px !important; }
+			}
+
+			/* Mobile (portrait) 	320px */
+			@media only screen and (max-width: 480px) {
+				#resume { height: 590px !important; }
+			}
 		</style>
         <div style="text-align: center;"><a id="get-resume" class="button" href="<?= SITEROOT ?>downloads/resume.pdf">Download (PDF)</a></div>
         <?php
-        	if (!isMobile()) {
-				echo '<iframe id="resume" src="http://docs.google.com/viewer?url=' . urlencode(SITEROOT . "downloads/resume.pdf") . '&embedded=true"  style="border: none;"></iframe>';
-			}
+			echo '<iframe id="resume" src="http://docs.google.com/viewer?url=' . urlencode(SITEROOT . "downloads/resume.pdf") . '&embedded=true"  style="border: none;"></iframe>';
 		?>
     </div></div>
 <?php include("includes/footer.php"); ?>

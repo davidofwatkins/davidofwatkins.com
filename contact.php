@@ -5,9 +5,6 @@
 <?php include("includes/header.php");
 	
 	echo '<link href="' . SITEROOT . 'common/style/contact-styling.css" rel="stylesheet" type="text/css" />';
-	if (isMobile()) {
-		echo '<link href="' . SITEROOT . 'common/style/contact-styling-mobile.css" rel="stylesheet" type="text/css" />';
-	}
 ?>
 	<script>
 		

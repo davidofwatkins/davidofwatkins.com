@@ -34,14 +34,17 @@ a:hover {
 #header h1 {
 	font-family: 'Josefin Sans Std Light', Arial, Helvetica, sans-serif;
 	font-size: 77px;
-	margin: 40px 0 0 0;
+	line-height: 165px;
 	letter-spacing: 5px;
 	font-weight: normal;
 	text-align: center;
-	float: left;
+	//float: left;
+	vertical-align: top;
+	display: inline-block;
 }
 #header img {
-	float: left;
+	//float: left;
+	display: inline-block;
 	margin: 0 20px 0 8px;
 	/* CSS3 Corners */
 	border-radius: 5px; border-radius: 5px;
@@ -248,7 +251,6 @@ a:hover {
 #topshadow {
 	background: url(../../images/dropshadow.png);
 	background-repeat: repeat-x;
-	min-width: 960px;
 }
 #footer a, #footer a:visited {
 	color: inherit;

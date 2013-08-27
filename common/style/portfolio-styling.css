@@ -202,50 +202,132 @@ div#project-selector {
 }
 
 /* Isotope Masonry Layout CSS */
-.isotope,
-        .isotope .isotope-item {
-          /* change duration value to whatever you like */
-          -webkit-transition-duration: 0.8s;
-             -moz-transition-duration: 0.8s;
-              -ms-transition-duration: 0.8s;
-               -o-transition-duration: 0.8s;
-                  transition-duration: 0.8s;
-        }
+/*.isotope,*/ .isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
 
-        .isotope {
-          -webkit-transition-property: height, width;
-             -moz-transition-property: height, width;
-              -ms-transition-property: height, width;
-               -o-transition-property: height, width;
-                  transition-property: height, width;
-        }
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
 
-        .isotope .isotope-item {
-          -webkit-transition-property: -webkit-transform, opacity;
-             -moz-transition-property:    -moz-transform, opacity;
-              -ms-transition-property:     -ms-transform, opacity;
-               -o-transition-property:      -o-transform, opacity;
-                  transition-property:         transform, opacity;
-        }
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
 
-        /**** disabling Isotope CSS3 transitions ****/
+/**** disabling Isotope CSS3 transitions ****/
 
-        .isotope.no-transition,
-        .isotope.no-transition .isotope-item,
-        .isotope .isotope-item.no-transition {
-          -webkit-transition-duration: 0s;
-             -moz-transition-duration: 0s;
-              -ms-transition-duration: 0s;
-               -o-transition-duration: 0s;
-                  transition-duration: 0s;
-        }
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
 
-        /**** Isotope filtering ****/
-        /*.isotope-item {
-          z-index: 2;
-        }
+/**** Isotope filtering ****/
+/*.isotope-item {
+  z-index: 2;
+}
 
-        .isotope-hidden.isotope-item {
-          pointer-events: none;
-          z-index: 1;
-        }*/
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}*/
+
+/* RESPONSIVE DESIGN FOR PORTFOLIO PAGE */
+
+#projects {
+	/* Defining project width instead of leaving
+	it auto prevents bug in jQuery isotope when
+	changing it's size */
+	width: 854px;
+}
+
+/* Tablet (Portrait) 	768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	#projects {
+		margin: auto;
+		width: 500px;
+	}
+
+	#projects .project_item {
+		width: 89%;
+	}
+
+	.project_item .project-image-frame {
+		width: 360px;
+		height: 200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/* Mobile (Landscape) 	480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+	#projects {
+		margin: auto;
+		width: 420px;
+	}
+}
+
+/* Mobile (portrait) 	320px */
+@media only screen and (max-width: 480px) {
+
+	.filter-option {
+		display: block !important;
+		width: 180px;
+		margin: 10px auto !important;
+	}
+
+	#content {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	#projects {
+		margin: auto;
+		min-width: 295px;
+		width: 93%;
+	}
+	#projects .project_item {
+		margin-left: 2px;
+		margin-right: 2px;
+		width: 85%;
+	}
+	.project_item .project-image-frame {
+		height: 136px;
+		width: 245px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Adjust play button overlay for smaller image */
+	.project_item .project-image-frame.video-overlay:after {
+		width: 98px;
+		height: 98px;
+		top: 19px; /* 1/2 height image - 1/2 height overlay */
+		left: 73.5px; /* 1/2 width image - 1/2 width overlay */
+	}
+}
+
+/* Mobile (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+
+}
