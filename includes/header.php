@@ -1,8 +1,8 @@
-<?php include("common/php/phpfunctions.php"); ?>
 <?php
-	
-    //Define root of site:
-    const SITEROOT = "http://beta.davidofwatkins.com/";
+    require_once("manifest.php");
+    require_once("common/php/phpfunctions.php");
+?>
+<?php
     
 	//Record visitor info to database:
 	recordVisitorDetails();
