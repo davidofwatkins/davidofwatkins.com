@@ -33,7 +33,7 @@
 				#resume { height: 590px !important; }
 			}
 		</style>
-        <div style="text-align: center;"><a id="get-resume" class="button" download="resume_dwatkins.pdf" href="<?= SITEROOT ?>/common/php/downloadserver.php?file=davidwatkins_resume.pdf">Download (PDF)</a></div>
+        <div style="text-align: center;"><a id="get-resume" class="button" href="<?= SITEROOT ?>/common/php/downloadserver.php?file=davidwatkins_resume.pdf">Download (PDF)</a></div>
         <?php
 			echo '<iframe id="resume" src="http://docs.google.com/viewer?url=' . urlencode(SITEROOT . "downloads/davidwatkins_resume.pdf") . '&embedded=true"  style="border: none;"></iframe>';
 		?>

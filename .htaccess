@@ -29,9 +29,15 @@ RewriteRule ^(.+)$ /$1.php [L,QSA]
 
 ErrorDocument 404 /404.html
 
+
+
+#### Forwarding ####
+
 # Forwarding to Google+
 Redirect /+ https://plus.google.com/104494880066441442910
 
 # Other Forwarding
 Redirect /sandbox /dev
 Redirect /longlivecc http://www.youtube.com/watch?v=KZp7tDk7Sag
+Redirect /elias http://www.youtube.com/watch?v=cNOXqDREb-Y
+Redirect /marinavideo /archive/marinavideo
