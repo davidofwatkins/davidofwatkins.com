@@ -13,7 +13,7 @@
 <title>Unsupported Browser</title>
 <style>
 	* { margin: 0; padding: 0; }
-	a, a:visited, a:active, a:focus { color: #09F; }	
+	a, a:visited, a:active, a:focus { color: #09F; text-decoration: none; }	
 	a img { border: none; }
 	a div#continuebutton {
 		color: black;
@@ -58,13 +58,18 @@
 		border: #006 solid 1px;
 		font-weight: bold;
 	}
+	p {
+		line-height: 2em;
+	}
 </style>
 </head>
 
 <body>
 	<div id="content">
-    	<h1>Please upgrade to a modern browser.</h1>
-        <p>It looks like you're using an old version of Internet Explorer (IE8 or under) to view this site.  While it should still function correctly on your browser, davidofwatkins.com takes advantage of several modern standards such as CSS3 and HTML5 that are only available in "modern browsers" to make the site more aesthetically pleasing and promote such modern standards.  Aside from the visual reasons of this site specifically, modern browsers (including newer versions of Internet Explorer) contain several security, stability, speed, and standards-compliant features that simply are not available to your version of Internet Explorer.  It is recommended that you upgrade your browser to one of the following, although you can also install <a href="http://www.google.com/chromeframe/eula.html">Google Chrome Frame</a> to run as an add-on inside of IE, if you are not ready to upgrade.</p>
+    	<h1>Uh oh. You might want a better browser.</h1>
+
+        <p>It looks like you're using an older version of Internet Explorer. Davidofwatkins.com uses several new web standards that may cause problems in your browser. Newer browsers contain security, stability, speed, design, and standards-compliant improvements that are not available to your version of Internet Explorer. To improve your experience on this <i>and other</i> sites, please consider trying one of the following ASAP:</p>
+        
         <div id="tablecontainer">
         <table>
         	<tr>
@@ -79,12 +84,12 @@
                 <td>Mozilla Firefox</td>
                 <td>Apple Safari</td>
                 <td>Opera</td>
-                <td>Internet Explorer 9<br />(Windows Vista/7)</td>
+                <td>Internet Explorer 9<br />(Windows Vista or later)</td>
             </tr>
         </table>
         </div>
-        <p>If you want to proceed with your current browser, click the button below:</p>
-        <a href="<?php echo $redirectUrl; ?>?ie=allowed"><div id="continuebutton">Continue with my current browser...</div></a>
+        <p>If you want to proceed without upgrading, click here:</p>
+        <a href="<?php echo $redirectUrl; ?>?ie=allowed"><div id="continuebutton">Continue anyway...</div></a>
     </div>
 </body>
 </html>
