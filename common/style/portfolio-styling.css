@@ -1,4 +1,4 @@
-/* CSS Document */
+	/* CSS Document */
 div#project-selector {
 	width: 385px;
 	margin: 10px auto 30px auto;
@@ -116,7 +116,7 @@ div#project-selector {
 
 /* Checkbox layout: */
 #project-filters {
-	width: 315px;
+	width: 350px;
 	margin: 20px auto;
 	font-size: 16px;
 }
@@ -134,7 +134,7 @@ div#project-selector {
 }
 
 .filter-option label.checkbox-label {
-    padding-left: 28px;
+    padding-left: 36px;
     vertical-align: middle;
     cursor: pointer;
 }
