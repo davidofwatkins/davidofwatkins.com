@@ -21,6 +21,9 @@
 	$profilePics = glob("images/profilepics/*.*");	//Gathers all pictures in /images/profilepics/ directory!				
 	$range = count($profilePics);
 	$random = rand() % $range;
+
+    //Suggested to be under 160 cars
+    $metaDescription = "I'm David Watkins: developer, video editor, tech enthusiast, and musician. I received my B.S. in CIT and minored in Web Development at Champlain College.";
 ?>
 
 <?php if(!isset($_REQUEST["mode"]) || $_REQUEST["mode"] != "ajax"): //Do not include header info if page is being accessed via AJAX ?>
@@ -28,12 +31,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/Person"><head>
     <meta charset=utf-8" />
     
-    <meta name="description" content="I'm David Watkins: developer, music lover, video editor, and tech enthusiast. I received my Bachelor of Science degree in Computer Information Technology with a minor in Web Development at #campchamp in Burlington, VT in 2013." />
-    <meta name="keywords" content="david,owen-frederic,watkins,champlain,web developer,development,java,php,javascript,xml" />
+    <meta name="description" content="<?= $metaDescription ?>" />
+    <meta name="keywords" content="david,owen-frederic,watkins,champlain,web,developer,development,java,php,javascript,xml,mysql,sql,python,programming,design,music,guitar" />
     
     <!-- Google +1 Button Meta Info -->
     <meta itemprop="name" content="David Of Watkins">
-    <meta itemprop="description" content="I'm David Watkins: developer, music lover, video editor, and tech enthusiast. I received my Bachelor of Science degree in Computer Information Technology with a minor in Web Development at #campchamp in Burlington, VT in 2013.">
+    <meta itemprop="description" content="<?= $metaDescription ?>">
     
     <!-- Facebook Like Button Meta Info -->
     <meta property="og:title" content="David Of Watkins" />
@@ -47,7 +50,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@dwat91">
     <meta name="twitter:title" content="David Watkins">
-    <meta name="twitter:description" content="I'm David Watkins: developer, music lover, video editor, and tech enthusiast. I received my Bachelor of Science degree in Computer Information Technology with a minor in Web Development at #campchamp in Burlington, VT in 2013.">
+    <meta name="twitter:description" content="<?= $metaDescription ?>">
     <meta name="twitter:creator" content="@dwat91">
     <meta name="twitter:image:src" content="http://davidofwatkins.com/images/profileicon-perminent.jpg">
     <meta name="twitter:domain" content="davidofwatkins.com">
