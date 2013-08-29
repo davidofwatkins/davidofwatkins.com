@@ -25,6 +25,52 @@
             margin-top: 20px !important;
             font-size: 16px;
         }
+
+        /* See here for shadows: http://www.paulund.co.uk/playground/demo/css_box_shadow/ */
+        .imageframe {
+            box-shadow: 0 0 5px gray;
+            padding: 0px;
+            margin: 25px;
+            background: white;
+            position:relative;
+            line-height: 0;
+        }
+        .imageframe.left {
+            float: left;
+            -webkit-transform: rotate(-3deg);
+        }
+        .imageframe.right {
+            float: right;
+            -webkit-transform: rotate(5deg);
+        }
+            .imageframe img {
+                border: 10px solid white;
+            }
+
+        .imageframe:before, .imageframe:after {
+            content:"";
+            position:absolute; 
+            z-index:-1;
+            -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+            -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+            box-shadow:0 0 20px rgba(0,0,0,0.8);
+            top:0;
+            bottom:0;
+            left:10px;
+            right:10px;
+            -moz-border-radius:100px / 10px;
+            border-radius:100px / 10px;
+        } 
+        .imageframe:after {
+            right:10px; 
+            left:auto;
+            -webkit-transform:skew(8deg) rotate(3deg); 
+               -moz-transform:skew(8deg) rotate(3deg);     
+                -ms-transform:skew(8deg) rotate(3deg);     
+                 -o-transform:skew(8deg) rotate(3deg); 
+                    transform:skew(8deg) rotate(3deg);
+        }
+
     </style>
 
     <script>
@@ -63,26 +109,30 @@
 
                 <p>Greetings, and welcome!</p>
 
-                <p>I'm David Watkins: developer, music lover, video editor, and tech enthusiast. I received my Bachelor of Science degree in Computer Information Technology with a minor in Web Development at <a href="http://www.champlain.edu/" target="_blank">Champlain College</a> in Burlington, VT in 2013. Currently residing in the Southern California area, I have created tools such as <a href="https://chrome.google.com/webstore/detail/rescroller/ddehdnnhjimbggeeenghijehnpakijod" target="_blank">Rescroller for Chrome</a> and worked on projects such as <a href="http://accessburlington.com" target="_blank">Access Burlington</a>. With innovation, I believe technology has the potential to improve our lives in exciting and creative ways. This is my personal website, so please feel free to read more about me, <a href="<?= SITEROOT ?>portfolio">explore my portfolio</a>, or <a href="<?= SITEROOT ?>contact">contact me</a>.</p>
+                <p>I'm David Watkins: developer, video editor, tech enthusiast, and musician. I received my Bachelor of Science in Computer Information Technology with a minor in Web Development at <a href="http://www.champlain.edu/" target="_blank">Champlain College</a> in Burlington, VT in 2013. Currently residing in the Southern California area, I have created tools such as <a href="https://chrome.google.com/webstore/detail/rescroller/ddehdnnhjimbggeeenghijehnpakijod" target="_blank">Rescroller for Chrome</a> and contributed to projects such as <a href="http://accessburlington.com" target="_blank">Access Burlington</a>. With innovation, I believe technology has the potential to improve our lives in exciting and creative ways. This is my personal website, so please feel free to read more about me, <a href="<?= SITEROOT ?>portfolio">explore my portfolio</a>, or <a href="<?= SITEROOT ?>contact">contact me</a>.</p>
 
                 <p>Thank you, and I hope you'll enjoy your stay.</p>
                 <p>&mdash;David Owen Frederic Watkins</p>
 
             </div>
             
-            <p id="readmore-link"><a href="#">Learn more about David</a></p>
+            <p id="readmore-link"><a href="#">Learn more about me</a></p>
             <div class="readmore">
                 
                 <h2>About Me</h2>
 
-                <p>I was born and raised in Southern California, where I attended middle school at <a href="http://www.vandammeacademy.com/" target="_blank">VanDamme Academy</a> and high school at <a href="http://sagehillschool.org" target="_blank">Sage Hill School</a>. After graduating in 2009 and applying to colleges <a href="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=202400406829683397268.00044781c74c5f1e27392&ll=40.913513,-97.558594&spn=53.919349,82.96875&z=4" target="_blank">around the country</a>, I decided to enroll at <a href="http://www.champlain.edu/" target="_blank">Champlain College</a> in Burlington, VT. Attracted to its small community, tech-related curriculum, liberal arts core, and college town setting, I am proud to say I chose the right school for me. At Champlain, I expanded my understanding of information technology and web programming, created an <a href="<?= SITEROOT ?>portfolio#ccshuttletracker">Android app to track the school's shuttle system</a> and a <a href="">housing registration webapp</a> as a proposal to residential life, called Montr&eacute;al my home for one outstanding, <a href="http://www.youtube.com/watch?v=3AK4Tuv5coU" target="_blank">dance-worthy</a> semester, and&mdash;perhaps most importantly&mdash;<a href="http://www.youtube.com/watch?v=KZp7tDk7Sag" target="_blank">made some amazing lifetime friends</a>. In May, 2013 (on <a href="http://en.wikipedia.org/wiki/Star_Wars_Day" target="_blank">Star Wars Day</a>), <a href="http://www.youtube.com/watch?v=AV2p_xC9MXM" target="_blank">I graduated</a> <i>magna cum laude</i> with my peers. Since then, I have been enjoying some time off while pursuing miscellaneous personal projects and freelancing for such sites as <a href="http://accessburlington" target="_blank">Access Burlington</a>.</p>
+                <p>I was born and raised in Southern California. After attending <a href="http://www.vandammeacademy.com/" target="_blank">VanDamme Academy</a> and <a href="http://sagehillschool.org" target="_blank">Sage Hill School</a>, I enrolled at <a href="http://www.champlain.edu/" target="_blank">Champlain College</a> in Burlington, VT in 2009 (having applied to several schools <a href="http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=202400406829683397268.00044781c74c5f1e27392&ll=40.913513,-97.558594&spn=53.919349,82.96875&z=4" target="_blank">across the country</a>). Attracted to its small community, tech-related curriculum, liberal arts core, and college town setting, I am proud to say I chose the right school for me. At Champlain, I pursued information technology and web programming, developed an <a href="<?= SITEROOT ?>portfolio#ccshuttletracker">Android app to track the school's shuttle system</a>, proposed and created a <a href="<?= SITEROOT ?>portfolio#cchousing">housing registration webapp</a>, lived in Montr&eacute;al for one outstanding, <a href="http://www.youtube.com/watch?v=3AK4Tuv5coU" target="_blank">dance-worthy</a> semester, and&mdash;perhaps most importantly&mdash;<a href="http://www.youtube.com/watch?v=KZp7tDk7Sag" target="_blank">made some amazing lifetime friends</a>. In May, 2013 (on <a href="http://en.wikipedia.org/wiki/Star_Wars_Day" target="_blank">Star Wars Day</a>), <a href="http://www.youtube.com/watch?v=AV2p_xC9MXM" target="_blank">I graduated</a> <i>magna cum laude</i> with my peers. Since then, I have been enjoying some time off while pursuing miscellaneous personal projects and freelancing for such sites as <a href="http://accessburlington" target="_blank">Access Burlington</a>.</p>
 
-                <p>Technology and electronics have captured my curiosity and interest for most of my life. My passion has expanded from how computers function to how they can improve our daily lives and beyond. Social networking has given us the ability to stay in touch with friends across the world, for example, and Google has given us the ability to research nearly anything from inside our homes or on the go (or even from <a href="http://www.youtube.com/watch?v=6BTCoT8ajbI" target="_blank"> our glasses</a>).  With a plethora of devices and platforms in every household (from phones to tablets, Androids to iPhones&mdash;each interconnected through a global network), I'm truly excited to be part of an industry with such potential and innovation.</p>
+                <div class="imageframe right"><img style="width: 175px;" title="Google Glass" src="http://beta.davidofwatkins.com/images/profilepics/dwatglassface.jpg" /></div>
+                <p>Technology and electronics have captured my curiosity and interest for most of my life. My passion has expanded from not only how computers work to how they affect our lives. The internet has revolutionized our ability to share and connect with distant friends and remain updated in real-time with current events across the globe. It has given us easier access to information, collaboration, and communication (even from <a href="http://www.youtube.com/watch?v=6BTCoT8ajbI" target="_blank"> our glasses</a>) than ever before. With a plethora of growing devices and platform, I'm thrilled to be part of an such an innovative industry with such high potential.</p>
 
-                <p>I enjoy challenging <a href="http://psychology.about.com/od/cognitivepsychology/a/left-brain-right-brain.htm" target="_blank">both sides of my brain</a> for differing activities. In contrast to code and tech, music is one of the most vital aspects of my life. I enjoy most genres of music and have been a part of <a href="http://www.sccchorus.org/" target="_blank">choruses</a>, school musicals, and vocal-study singing workshops. In college, I learned to play guitar and regularly participated in Champlain College's weekly open mic: <a href="http://www.thegrindlive.com/" target="_blank">The Grind</a>. Outside of music, I've developed a passion for video editing and have used it to document and share many of my experiences.</p>
+                <div class="imageframe left"><img style="width: 175px;" title="Photo credit: Jim Courtney" src="<?= SITEROOT ?>images/grindjam.jpg" /></div>
+                <p>In contrast to code and tech, music is a vital passion of mine. I have been a member of <a href="http://www.sccchorus.org/" target="_blank">choruses</a>, school musicals, and vocal-study singing workshops. In college, I learned to play guitar and regularly participated in Champlain College's weekly open mic: <a href="http://www.thegrindlive.com/" target="_blank">The Grind</a>. In coordination with music, I've developed a passion for video editing and have used it to document and share many of my experiences.</p>
 
-                <p>Regardless of what my future holds for me, I hope to continue exploring these interests and passions of mine. Never do I ever want to stop learning. We live in an exciting era, where the growth of technology has the potential to improve and change our lives in unpredictable and unimaginable ways.</p>
+                <p>Regardless of what the future holds for me, I hope to continue exploring these passions. Never do I want to stop learning. We live in an exciting era where the growth of technology has the potential to improve and change our lives in unpredictable and unimaginable ways.</p>
                 
+                <div style="clear: both;"></div>
+
                 <!--<h2>Trivia</h2>
                 <ol>
                 	<li>I think Google is awesome!</li>
