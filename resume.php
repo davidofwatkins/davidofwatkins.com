@@ -5,8 +5,8 @@
 <?php include("includes/header.php"); ?>
     <div id="supercontent"><div id="content">
         <h1>Resume</h1>
-        <p align="center">If you are interested in my work, please feel free to read through my resume below (PDF). As always, I am available by email at <a href="mailto:david@davidofwatkins.com">david@davidofwatkins.com</a> or through the <a href="<?= SITEROOT ?>contact">contact page</a> if you have any questions.</p>
-        <p align="center">For more information that may not be included on my resume, please visit my <a href="http://www.linkedin.com/in/davidofwatkins" target="_blank">LinkedIn profile</a>. Thank you.</p>
+        <p align="center">If you are interested in my work, please find my resume below (PDF). As always, I am available by email at <a href="mailto:david@davidofwatkins.com">david@davidofwatkins.com</a> or through the <a href="<?= SITEROOT ?>contact">contact page</a> if you have any questions.</p>
+        <p align="center">For more projects that may not be included on my resume, please see my <a href="<?= SITEROOT ?>portfolio">portfolio</a>. Thank you.</p>
         <style>
 			embed {
 				width: 100%;
