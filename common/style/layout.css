@@ -32,6 +32,7 @@
 	#supercontent {
 		width: 879px;
 		float: left;
+		min-height: 485px;
 	}
 		#content {
 			padding: 0 10px 10px 15px;
@@ -50,23 +51,26 @@
 	}
 	#footer #randomfavquote {
 		text-align: center;
-		color: #666;
+		color: #919090;
 		font-family: "Rancho";
-		margin: auto 30px;
+		/* margin: auto 30px; */
+		margin: auto;
+		max-width: 885px;
 		font-size: 22px;
 	}
 .clearfloats { clear: both; }
 /*********NAVIGATION************/
 #navbar {
-	width: 528px;
 	text-align: center;
 	margin: 0 auto 0 auto;
 	height: 75px;
+	min-width: 316px;
 }
 	#navbar .li {
 		font-size: 16px;
 		color: #666;
-		float: left;
+		display: inline-block;
+		vertical-align: top;
 		width: 100px; /*100px + 10px margin + 20px padding + 2px border = 132px each */
 		height: 25px;
 		padding: 10px 10px 5px 10px;
@@ -91,3 +95,7 @@
 
 /* Disables mouseover underlining on browsers like Chrome */
 #navbar a { text-decoration: none; color: inherit; }
+
+/* For mobile only */
+#likebuttons-mobile { display: none; }
+#mobile-social-buttons { display: none; }

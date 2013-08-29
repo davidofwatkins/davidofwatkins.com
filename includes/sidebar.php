@@ -50,12 +50,15 @@
 		
 		function animateButton_on(button, newMarginLeft) {
 			
-			//Change button image
-			var originalSrc = button.attr("src");
-			button.attr("src", originalSrc.replace("_off", "_on"));
-			
-			//Animate button position
-			button.animate({ "margin-left" : newMarginLeft }, "fast");
+			if (button) {
+
+				//Change button image
+				var originalSrc = button.attr("src");
+				button.attr("src", originalSrc.replace("_off", "_on"));
+				
+				//Animate button position
+				button.animate({ "margin-left" : newMarginLeft }, "fast");
+			}
 		}
 		
 		function animateButton_off(button, newMarginLeft) {
@@ -90,7 +93,6 @@
 	});
 </script>
 <div id="sidebar">
-    
 	<div class="fixedsidebar">        
     	<h1>More DW:</h1>
         <div id="more-dw">
@@ -105,53 +107,24 @@
                     <!-- Using iframe version of facebook subscribe button because the HTML5 and XBML versions have difficulty loading when display = none -->
                     <iframe src="//www.facebook.com/plugins/subscribe.php?href=https%3A%2F%2Fwww.facebook.com%2Fdavidofwatkins&amp;layout=button_count&amp;show_faces=true&amp;colorscheme=light&amp;font&amp;width=120" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px;" allowTransparency="true"></iframe>
                 </div>
-                <div class="socialpopup-content" id="twitter-popup-content" width="250" height="390">
-                    <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-                    <script>
-                    new TWTR.Widget({
-                      version: 2,
-                      type: 'profile',
-                      rpp: 4,
-                      interval: 30000,
-                      width: 250,
-                      height: 300,
-                      theme: {
-                        shell: {
-                          background: '#4a4a4a',
-                          color: '#ffffff'
-                        },
-                        tweets: {
-                          background: '#7a7a7a',
-                          color: '#ffffff',
-                          links: '#95C9FD'
-                        }
-                      },
-                      features: {
-                        scrollbar: false,
-                        loop: false,
-                        live: true,
-                        behavior: 'all'
-                      }
-                    }).render().setUser('dwat91').start();
-                    </script>
+                <div class="socialpopup-content" id="twitter-popup-content" width="350" height="367">
+					<a class="twitter-timeline" href="https://twitter.com/dwat91" data-widget-id="365730330562412545">Tweets by @dwat91</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </div>
-                <div class="socialpopup-content" id="linkedin-popup-content" height="105" width="355" style="margin: -10px 0 0 -8px;">
+                <div class="socialpopup-content" id="linkedin-popup-content" height="130" width="355" style="margin: -10px 0 0 -8px;">
                     <div id="linkedinbordercover"></div>
                     <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
                     <script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/davidofwatkins" data-format="inline" data-related="false"></script>
                 </div>
             </div>
         
-        	<a href="https://plus.google.com/104494880066441442910/about" class="moredw-link" for="gplus" target="_blank" ><img src="/images/linkicons/googleplus_off.png" /></a>
-            <a href="http://www.facebook.com/davidofwatkins" class="moredw-link" for="facebook" target="_blank" ><img src="/images/linkicons/facebook_off.png" /></a>
-            <a href="http://twitter.com/dwat91" class="moredw-link" for="twitter" target="_blank" ><img src="/images/linkicons/twitter_off.png" /></a>
-            <a href="http://www.linkedin.com/in/davidofwatkins" for="linkedin" class="moredw-link" target="_blank" ><img src="/images/linkicons/linkedin_off.png" /></a>
+        	<a href="https://plus.google.com/104494880066441442910/about" class="moredw-link" for="gplus" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/googleplus_off.png" /></a>
+            <a href="http://www.facebook.com/davidofwatkins" class="moredw-link" for="facebook" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/facebook_off.png" /></a>
+            <a href="http://twitter.com/dwat91" class="moredw-link" for="twitter" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/twitter_off.png" /></a>
+            <a href="http://www.linkedin.com/in/davidofwatkins" for="linkedin" class="moredw-link" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/linkedin_off.png" /></a>
         </div>
         <div id="likebuttons">
-        	<!-- HTML5 version of Google+/Facebook plugins breaks internet explorer :( -->
-            <!--<center><div class="g-plusone" data-href="//davidofwatkins.com" data-size="tall" data-annotation="bubble" data-width="120"></center>
-            <center><div class="fb-like" data-href="http://davidofwatkins.com" data-send="false" data-layout="box_count" data-width="44" data-show-faces="true"></div></center>-->
-            <center><g:plusone href="http://davidofwatkins.com" size="tall" annotation="bubble" width="120"></g:plus></center>
+        	<center><g:plusone href="http://davidofwatkins.com" size="tall" annotation="bubble" width="120"></g:plus></center>
             <center><fb:like href="http://davidofwatkins.com" send="false" layout="box_count" width="44" show_faces="true"></fb:like></center>
         </div>
 	</div>

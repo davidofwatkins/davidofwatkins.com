@@ -5,8 +5,8 @@
 <?php include("includes/header.php"); ?>
     <div id="supercontent"><div id="content">
         <h1>Resume</h1>
-        <p align="center">If you are interested in my work, please feel free to read through my resume below (PDF). As always, I am available by email at <a href="mailto:david@davidofwatkins.com">david@davidofwatkins.com</a> or through the <a href="/contact">contact page</a> if you have any questions.</p>
-        <p align="center">For more information that may not be included on my resume, please visit my <a href="http://www.linkedin.com/in/davidofwatkins" target="_blank">LinkedIn profile</a>. Thank you.</p>
+        <p align="center">If you are interested in my work, please find my resume below (PDF). As always, I am available by email at <a href="mailto:david@davidofwatkins.com">david@davidofwatkins.com</a> or through the <a href="<?= SITEROOT ?>contact">contact page</a> if you have any questions.</p>
+        <p align="center">For more projects that may not be included on my resume, please see my <a href="<?= SITEROOT ?>portfolio">portfolio</a>. Thank you.</p>
         <style>
 			embed {
 				width: 100%;
@@ -17,12 +17,25 @@
 				width: 100%;
 				height: 1100px;
 			}
-		</style>
-        <a class="button-wrapper" href="/downloads/resume.pdf"><div class="button-small">Download (PDF)</div></a>
-        <?php
-        	if (!isMobile()) {
-				echo '<iframe id="resume" src="http://docs.google.com/viewer?url=http%3A%2F%2F' . siteroot . '%2Fdownloads%2Fresume.pdf&embedded=true"  style="border: none;"></iframe>';
+
+			/* Tablet (Portrait) 	768px */
+			@media only screen and (min-width: 768px) and (max-width: 959px) {
+				#resume { height: 1050px !important; }
 			}
+
+			/* Mobile (Landscape) 	480px */
+			@media only screen and (min-width: 480px) and (max-width: 767px) { 
+				#resume { height: 955px !important; }
+			}
+
+			/* Mobile (portrait) 	320px */
+			@media only screen and (max-width: 480px) {
+				#resume { height: 590px !important; }
+			}
+		</style>
+        <div style="text-align: center;"><a id="get-resume" class="button" href="<?= SITEROOT ?>/common/php/downloadserver.php?file=davidwatkins_resume.pdf">Download (PDF)</a></div>
+        <?php
+			echo '<iframe id="resume" src="http://docs.google.com/viewer?url=' . urlencode(SITEROOT . "downloads/davidwatkins_resume.pdf") . '&embedded=true"  style="border: none;"></iframe>';
 		?>
     </div></div>
 <?php include("includes/footer.php"); ?>

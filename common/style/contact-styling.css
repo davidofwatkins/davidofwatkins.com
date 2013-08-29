@@ -14,7 +14,7 @@ form textarea {
 	padding: 10px;
 	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
 	max-width: 100%;
-	font-size: 13px
+	font-size: 13px;
 }
 form input[type=text], form input[type=email] {
 	padding: 5px;
@@ -22,26 +22,31 @@ form input[type=text], form input[type=email] {
 }
 form input[type=text], form input[type=email], form textarea {
 	border: #999 solid 1px;
-	margin: 1px auto 1px auto; /*Top/Bottom borders set to 1px to account for border change from 1px to 2px on hover*/
-	/* CSS3 Corners */
 	border-radius: 5px;
 }
 form input[type=text]:focus, form input[type=email]:focus, form textarea:focus {
 	outline: none;
 	border: #6580FE solid 2px;
-	margin: 0px auto 0px auto; /*Top/Bottom borders set to 0px to account for border change from 1px to 2px on hover*/
+	
 	box-shadow: inset 0 1px 2px gray;
 }
+
+#senderinfo input { margin: 1px 2px; }
+#senderinfo input:focus { margin: 2px 0px; }
+
+form textarea { margin: 1px auto 1px auto; /*Top/Bottom borders set to 1px to account for border change from 1px to 2px on hover*/ }
+form textarea:focus { margin: 0px auto 0px auto; /*Top/Bottom borders set to 0px to account for border change from 1px to 2px on hover*/ }
 	
 div#senderinfo {
 	background: #DEEBFE;
 	padding: 10px 20px 5px 20px;
-	border-radius: 5px;
-	width: 460px;
-	text-align: center;
+	border-radius: 3px;
+	width: 404px;
+	text-align: left;
+	box-shadow: 0 0 5px gray;
 }
 	div#senderinfo .label {
-		text-align: right;
+		//text-align: right;
 		line-height: 28px;
 		padding-right: 10px;
 	}
@@ -49,3 +54,30 @@ div#senderinfo {
 		margin-bottom: 5px;
 		display: inline-block;
 	}
+
+input.button {
+	cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+/* Mobile (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+	#senderinfo .label {
+		display: block !important;
+		text-align: center;
+		font-weight: bold;
+	}
+		#senderinfo #email-label { margin-top: 20px; }
+	#senderinfo {
+		width: 235px !important;
+		padding-bottom: 10px !important;
+	}
+	#senderinfo input {
+		width: 220px !important;
+	}
+
+	form#contact h2 {
+		margin-top: 35px;
+	}
+}

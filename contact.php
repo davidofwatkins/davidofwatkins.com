@@ -4,17 +4,14 @@
 ?>
 <?php include("includes/header.php");
 	
-	echo '<link href="/common/style/contact-styling.css" rel="stylesheet" type="text/css" />';
-	if (isMobile()) {
-		echo '<link href="/common/style/contact-styling-mobile.css" rel="stylesheet" type="text/css" />';
-	}
+	echo '<link href="' . SITEROOT . 'common/style/contact-styling.css" rel="stylesheet" type="text/css" />';
 ?>
 	<script>
 		
 		function AJAXSubmit() {
 			
 			if (validateForm()) {
-				$.post("/common/php/emailer.php", $("form#contact").serialize(), function(data) {
+				$.post("<?= SITEROOT ?>/common/php/emailer.php", $("form#contact").serialize(), function(data) {
 					if (data == "sent") {
 						//Replace HTML with confirmation
 						$("#content").fadeOut("slow", function() {
@@ -116,7 +113,7 @@
                 <h2 underline="off">Please leave your message below:</h2>
                 <textarea id="sender_message" name="sender_message" cols="70" rows="20" style="margin-left: auto; margin-right: auto;" placeholder="Write me something, here! Anything!" ></textarea>
                 <div style="width: 100%;"></div> <!--Accounts for Firefox 4 textbox resizing-->
-    		<input type="submit" class="button-small" value="Send" />
+    		<input type="submit" class="button" value="Send" />
           </form>
         </center>
     </div></div>

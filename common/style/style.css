@@ -34,14 +34,17 @@ a:hover {
 #header h1 {
 	font-family: 'Josefin Sans Std Light', Arial, Helvetica, sans-serif;
 	font-size: 77px;
-	margin: 40px 0 0 0;
+	line-height: 165px;
 	letter-spacing: 5px;
 	font-weight: normal;
 	text-align: center;
-	float: left;
+	//float: left;
+	vertical-align: top;
+	display: inline-block;
 }
 #header img {
-	float: left;
+	//float: left;
+	display: inline-block;
 	margin: 0 20px 0 8px;
 	/* CSS3 Corners */
 	border-radius: 5px; border-radius: 5px;
@@ -132,6 +135,10 @@ a:hover {
 }
 */
 
+.fixedsidebar {
+	z-index: 2;
+}
+
 #sidebar a.moredw-link {
 	display: block;
 	width: 35px;
@@ -166,6 +173,8 @@ a:hover {
 	border: 2px solid #666;
 	text-align: left;
 	display: none;
+	z-index: 2;
+	overflow: hidden;
 }
 
 #sidebar #socialpopup:before {
@@ -212,12 +221,12 @@ a:hover {
 	}
 	#socialpopup #linkedin-popup-content #linkedinbordercover {
 		border: 10px solid white;
-		height: 105px;
+		height: 130px;
 		width: 345px;
 		margin-bottom: -135px;
 		background: none;
 		float: left;
-		position: relative;
+		position: absolute;
 		pointer-events: none;
 		z-index: 10;
 	}
@@ -242,7 +251,6 @@ a:hover {
 #topshadow {
 	background: url(../../images/dropshadow.png);
 	background-repeat: repeat-x;
-	min-width: 960px;
 }
 #footer a, #footer a:visited {
 	color: inherit;
@@ -253,7 +261,8 @@ a:hover {
 
 /* BUTTONS */
 
-.button, .button-small {
+/* OLD BUTTONS - DELETE */
+/*.button, .button-small {
 	padding: 3px 10px;
 	background: #333;
 	border-radius: 3px;
@@ -263,7 +272,7 @@ a:hover {
 	width: 200px;
 	margin: 25px auto 10px auto;
 	text-align: center;
-	/* CSS3 Transitions */
+	/* CSS3 Transitions *//*
 	transition-property: background;
 	transition-duration: .2s;
 	-webkit-transition-property: background;
@@ -278,7 +287,7 @@ a:hover {
 }
 .button:hover, .button-small:hover {
 	color: #FFF;
-	/* CSS3 Transitions */
+	/* CSS3 Transitions *//*
 	transition-property: background;
 	transition-duration: .2s;
 	-webkit-transition-property: background;
@@ -295,14 +304,36 @@ a.button-wrapper, a.button-wrapper:hover, a.button-wrapper:visited, a.button-wra
 	width: 260px;
 	display: block;
 	margin: auto;
+}*/
+
+.button {
+	display: inline-block;
+	text-align: center;
+	margin: 15px;
+	padding: 4px 30px;
+	background: rgb(53, 158, 255);
+	border: 1px solid gray;
+	text-decoration: none;
+	color: black !important;
+	border-radius: 50px;
+	box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.2);
+	transition: box-shadow 0.5s;
+	font-size: 14px;
+	font-weight: bold;
 }
+
+	.button:hover {
+		box-shadow: inset -1px -2px 5px rgba(0, 0, 0, 0.5);
+		transition: box-shadow 0.5s;
+		text-decoration: none;
+	}
 
 #supercontent ol, #supercontent ul {
 	margin-left: 35px;
 }
 
 	#supercontent ol li, #supercontent ul li {
-		margin: 7px auto;
+		margin: 12px auto;
 	}
 	
 #pagedescription {

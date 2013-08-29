@@ -4,7 +4,24 @@
 */
 
 $(document).ready(function() {
-	
+	if ($("#sidebar").css("display") != "none") {
+		initFixedSidebar();
+	}
+});
+
+var initiatedSidebar = false;
+
+$(window).resize(function() {
+	if (!initiatedSidebar && $("#sidebar").css("display") != "none") {
+		initFixedSidebar();
+		initiatedSidebar = true;
+	}
+});
+
+
+//$(document).ready(function() {
+function initFixedSidebar() {
+
 	jQuery.each($(".fixedsidebar"), function() {
 		var theElement = $(this);
 		var originalPositioning = theElement.css("position"); //should usually be static
@@ -59,4 +76,4 @@ $(document).ready(function() {
 		
 	});
 
-});
+}//);
