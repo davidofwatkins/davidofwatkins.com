@@ -47,7 +47,7 @@
 		<description>
 			As a Champlain College capstone project, this housing registration web application is a working proof-of-concept for what would allow students to research on-campus living opportunities with details regarding location, room sizes, roommate possibilities, and more. It would allow residential administrators to easily enter descriptions and upload images and floor plans for each hall.
 		</description>
-		<src>http://dev.davidofwatkins.com/cchousing</src>
+		<src>/landing/cchousing/</src>
 		<imagepath>images/projects/cchousing_icon.png</imagepath>
 		<category>dev</category>
 		<showimageshadow>true</showimageshadow>
