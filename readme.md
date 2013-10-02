@@ -11,6 +11,12 @@ Beta release: <https://beta.davidofwatkins.com>
 
 ## Changelog
 
+### v1.1.2
+
+- Added landing page for CC Housing (/landing/cchousing/)
+- Added link in portfolio to CC Housing landing page
+- Added link in portfolio to CC Shuttle Tracker GitHub repository
+
 ### v1.1
 
 - Added automatic profile picture rotation every 60 seconds
