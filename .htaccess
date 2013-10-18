@@ -7,6 +7,7 @@ RewriteEngine On
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
 
 # Only code I could find that would work with multi-directories for this (see http://stackoverflow.com/a/10470916/477632):
 RewriteRule ^ %{REQUEST_URI}.php [L]
