@@ -15,8 +15,14 @@ ErrorDocument 404 /404.html
 
 #### Forwarding ####
 
-# Forwarding to Google+
+# Forwarding to Social Networks
 Redirect /+ https://plus.google.com/104494880066441442910
+Redirect /fb https://www.facebook.com/davidofwatkins
+Redirect /facebook https://www.facebook.com/davidofwatkins
+Redirect /twitter https://twitter.com/dwat91
+Redirect /in http://www.linkedin.com/in/davidofwatkins
+Redirect /linkedin http://www.linkedin.com/in/davidofwatkins
+Redirect /github https://github.com/dwat91
 
 # Other Forwarding
 Redirect /sandbox /dev
