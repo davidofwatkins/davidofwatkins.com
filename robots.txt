@@ -2,3 +2,7 @@ User-agent: *
 Disallow: /beta
 Disallow: /dev
 Disallow: /common/xml
+Disallow: /archive
+Disallow: /marinavideo
+Disallow: /elias
+Disallow: /sandbox

@@ -99,7 +99,7 @@
             
             <div id="error"></div>
             
-            <form id="contact" name="contact" action="../common/php/emailer.php" method="post" onSubmit="return AJAXSubmit()" novalidate> 
+            <form id="contact" name="contact" action="<?= SITEROOT ?>/common/php/emailer.php" method="post" onSubmit="return AJAXSubmit()" novalidate> 
             	<noscript>
                 	<input type="hidden" name="mode" value="noajax" />
                 </noscript>

@@ -166,6 +166,10 @@
 		}
 
 		return $projects;
-		
+	}
+
+	function dbg($content, $kill = true) {
+		echo "<pre>" . print_r($content, true) . "</pre>";
+		if ($kill) die();
 	}
 ?>

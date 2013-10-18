@@ -18,8 +18,11 @@
 	}
 
 	//Create profile pictures array					
-	$profilePics = glob("images/profilepics/*.*");	//Gathers all pictures in /images/profilepics/ directory!				
-	$range = count($profilePics);
+	$profilePics = glob("images/profilepics/*.*");			
+    foreach ($profilePics as &$pic) {
+        $pic = SITEROOT . $pic;
+    }
+    $range = count($profilePics);
 	$random = rand() % $range;
 
     //Suggested to be under 160 cars
@@ -153,7 +156,7 @@
 	?>
     
     
-	<div id="header"><div id="hcontainer"><a href="#"><img src="<?php echo SITEROOT . $profilePics[$random] ?>" width="146" height="176"></a>
+	<div id="header"><div id="hcontainer"><a href="#"><img src="<?= $profilePics[$random] ?>" width="146" height="176"></a>
 	<h1>davidofwatkins<span id="header-suffix">.com</span></h1></div></div>
     <?php include("includes/navbar.php"); ?>
     <div id="container">

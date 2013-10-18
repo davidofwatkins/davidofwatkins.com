@@ -1,35 +1,17 @@
-# Allows the user to leave out the .php file extension in addresses (though included .php extensions should still work)
-
-# More info, see here: http://stackoverflow.com/questions/1745680/htaccess-rewrite-causes-500-error-instead-of-404
-
-# More info about modifying .htaccess: http://perishablepress.com/press/2006/01/10/stupid-htaccess-tricks/#gen2
-
-
-
 Options -MultiViews
 
-# For security reasons, Option followsymlinks cannot be overridden.
-#Options +FollowSymlinks
-
 Options +SymLinksIfOwnerMatch
+
+# Rewrite URLs to allow for missing ".php"
 RewriteEngine On
-
 RewriteBase /
-
-# as long as the request does not match an existing file:
 RewriteCond %{REQUEST_FILENAME} !-f
-
-# as long as the request does not match an existing directory:
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# make sure new path points to an existing file:
-RewriteCond %{REQUEST_FILENAME}.php -f
-
-RewriteRule ^(.+)$ /$1.php [L,QSA]
+# Only code I could find that would work with multi-directories for this (see http://stackoverflow.com/a/10470916/477632):
+RewriteRule ^ %{REQUEST_URI}.php [L]
 
 ErrorDocument 404 /404.html
-
-
 
 #### Forwarding ####
 

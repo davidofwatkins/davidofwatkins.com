@@ -86,7 +86,7 @@ if (!isMobile()) {
 			<h1 class="project_title"><?= $project["name"] ?> <small><?= $project["helpertext"] ?></small></h1>
 			<?php if (isset($project["src"])) echo '<a href="' . $project["src"] . '" ' . $project["lightboxtext"] . ' target="_blank">'; ?>
                 <div class="project-image-frame<?php if (strpos(strtolower($project["helpertext"]), "video") !== false) echo " video-overlay"; ?>">
-                    <img class="project-image" src="<?= $project["imagepath"] ?>" />
+                    <img class="project-image" src="<?= SITEROOT . $project["imagepath"] ?>" />
                 </div>
             <?php if (isset($project["src"])) echo '</a>'; ?>
 			<div class="project_description"><?= $project["description"] ?></div>
