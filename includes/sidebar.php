@@ -107,7 +107,7 @@
                     <!-- Using iframe version of facebook subscribe button because the HTML5 and XBML versions have difficulty loading when display = none -->
                     <iframe src="//www.facebook.com/plugins/subscribe.php?href=https%3A%2F%2Fwww.facebook.com%2Fdavidofwatkins&amp;layout=button_count&amp;show_faces=true&amp;colorscheme=light&amp;font&amp;width=120" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px;" allowTransparency="true"></iframe>
                 </div>
-                <div class="socialpopup-content" id="twitter-popup-content" width="350" height="367">
+                <div class="socialpopup-content" id="twitter-popup-content" width="350" height="400">
 					<a class="twitter-timeline" href="https://twitter.com/dwat91" data-widget-id="365730330562412545">Tweets by @dwat91</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </div>

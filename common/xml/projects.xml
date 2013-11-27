@@ -61,7 +61,7 @@
 			The Champlain College Shuttle Tracker displays locations of shuttles and buses at &lt;a href="http://champlain.edu" target="_blank" &gt;Champlain College&lt;/a&gt; that are responsible for transportation between campus, Spinner Place, Quarry Hill, and the Gilbane parking lot. It is an unofficial, mobile, and on-the-go alternative to the desktop web tracker, available at &lt;a href="http://shuttle.champlain.edu" target="_blank"&gt;shuttle.champlain.edu&lt;/a&gt;. I chose to pursue this project voluntarily because I personally desired a better way to access shuttle information on the go and it was a good way to introduce myself to Android development.
 			&lt;br /&gt;
 			&lt;br /&gt;
-			Since graduating from Champlain, I have open-sourced the app and welcome others in the Champlain community to build upon my work. &lt;a href="https://github.com/dwat91/ccshuttletracker" target="_blank" &gt;Click here&lt;/a&gt; to view the project on GitHub.
+			Since graduating from Champlain, I have open-sourced the app and welcome others in the Champlain community to build upon my work. &lt;a href="https://github.com/davidofwatkins/ccshuttletracker" target="_blank" &gt;Click here&lt;/a&gt; to view the project on GitHub.
 		</description>
 		<src>https://market.android.com/details?id=dwat.ccshuttletracker</src>
 		<imagepath>images/projects/ccshuttletracker.png</imagepath>
