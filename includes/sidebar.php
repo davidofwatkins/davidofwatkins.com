@@ -99,7 +99,7 @@
         
         	<div id="socialpopup" for="">
                 <!-- Content divs below are display: none; only one activated at a time via js -->
-                <div class="socialpopup-content" id="gplus-popup-content" height="39" width="160" style="width: 160px; height: 49px; margin-top: -10px" >
+                <div class="socialpopup-content" id="gplus-popup-content" height="65" width="200" style="margin-top: -10px" >
                     <div id="gplusbordercover"></div>
                     <div class="g-plus" data-href="https://plus.google.com/104494880066441442910?rel=publisher" data-width="200" data-height="69" data-theme="light"></div>
                 </div>
