@@ -78,7 +78,7 @@ $subject = "New message from " . $senderName . "...";
 //Format the HTML message
 
 $htmlMessage = '<html><body style="font-family: arial, sans-serif; font-size: 13px;">
-    <p style="color: gray; margin: 10px;">The following email was sent to you from <b>' . $senderName . '</b>';
+    <p style="color: gray; margin: 10px;">The following email was sent to you from <b>' . $senderName . '</b> (' . $_SERVER["REMOTE_ADDR"] . ')';
 	if ($senderEmail) { $htmlMessage .= ' (' . $senderEmail . ')'; }
 	$htmlMessage .= ' from davidofwatkins.com on ' . date("D, M d, Y") . ' at ' . date("h:ia (T)") . ' </p>
     <p style="margin: 10px;">' . $message . '</p></body></html>';
