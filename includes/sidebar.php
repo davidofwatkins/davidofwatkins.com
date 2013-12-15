@@ -99,6 +99,9 @@
         
         	<div id="socialpopup" for="">
                 <!-- Content divs below are display: none; only one activated at a time via js -->
+                <div class="socialpopup-content" id="github-popup-content" height="110" width="200" >
+                    <iframe src="http://githubbadge.appspot.com/davidofwatkins" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
+                </div>
                 <div class="socialpopup-content" id="gplus-popup-content" height="65" width="200" style="margin-top: -10px" >
                     <div id="gplusbordercover"></div>
                     <div class="g-plus" data-href="https://plus.google.com/104494880066441442910?rel=publisher" data-width="200" data-height="69" data-theme="light"></div>
@@ -117,7 +120,8 @@
                     <script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/davidofwatkins" data-format="inline" data-related="false"></script>
                 </div>
             </div>
-        
+        	
+        	<a href="https://github.com/davidofwatkins" class="moredw-link" for="github" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/github_off.png" /></a>
         	<a href="https://plus.google.com/104494880066441442910/about" class="moredw-link" for="gplus" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/googleplus_off.png" /></a>
             <a href="http://www.facebook.com/davidofwatkins" class="moredw-link" for="facebook" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/facebook_off.png" /></a>
             <a href="http://twitter.com/dwat91" class="moredw-link" for="twitter" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/twitter_off.png" /></a>
