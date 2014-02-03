@@ -1,14 +1,17 @@
 # Ignored Files / Folders
 
-#Files
+# Files
 sftp-config.json
 google9e17676d809e0327.html
 php.ini
 error_log
 thumbs.db
 
-#Directories
+# Directories
 beta/
 dev/
 cgi-bin/
 archive/
+
+# Local Config
+settings_local.php
