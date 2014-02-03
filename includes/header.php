@@ -1,5 +1,5 @@
 <?php
-    require_once("manifest.php");
+    require_once("settings.php");
     require_once("common/php/phpfunctions.php");
 ?>
 <?php
