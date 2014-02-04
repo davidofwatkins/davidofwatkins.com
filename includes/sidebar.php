@@ -114,7 +114,7 @@
 					<a class="twitter-timeline" href="https://twitter.com/dwat91" data-widget-id="365730330562412545">Tweets by @dwat91</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </div>
-                <div class="socialpopup-content" id="linkedin-popup-content" height="130" width="355" style="margin: -10px 0 0 -8px;">
+                <div class="socialpopup-content" id="linkedin-popup-content" height="130" width="355" style="margin: -10px 0 0 -5px; height: 130px;">
                     <div id="linkedinbordercover"></div>
                     <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
                     <script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/davidofwatkins" data-format="inline" data-related="false"></script>
