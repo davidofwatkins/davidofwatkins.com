@@ -11,3 +11,6 @@ beta/
 dev/
 cgi-bin/
 archive/
+
+# Vagrant
+.vagrant/
