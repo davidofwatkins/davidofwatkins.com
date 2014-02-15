@@ -9,6 +9,16 @@ davidofwatkins.com is a portfolio site and internet
 Stable release: <https://davidofwatkins.com>
 Beta release: <https://beta.davidofwatkins.com>
 
+## Getting Started
+
+Davidofwatkins.com does not require a very complicated environment. It will run on a basic LAMP server.
+However, there is one important step when cloning the repository. Create a `settings_local.php` file and define
+the domain of the site like so:
+
+	<?php
+		$appRootURL = 'http://localhost:8080/';
+	?>
+
 ## Changelog
 
 ### v1.1.2
