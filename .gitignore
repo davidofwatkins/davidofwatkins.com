@@ -15,3 +15,6 @@ archive/
 
 # Local Config
 settings_local.php
+
+# Vagrant
+.vagrant/
