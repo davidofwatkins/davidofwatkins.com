@@ -67,9 +67,6 @@
     <meta name="twitter:app:id:ipad" content="">
     <meta name="twitter:app:id:googleplay" content="">
     
-    <!-- Chrome Frame -->
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    
     <!-- Google +1 Button -->
     <script type="text/javascript">
         (function() {

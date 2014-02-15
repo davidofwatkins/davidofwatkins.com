@@ -97,7 +97,6 @@
 	// Hack for G+ badge in popup - only needed for Firefox/IE
 	$(document).ready(function() {
 		$(".moredw-link[for=gplus]").hover(function() {
-			console.log($("#gplus-popout-incubator").html());
 			$("#gplus-popup-content").append($("#gplus-popout-incubator").html());
 			$("#gplus-popout-incubator").remove();
 		})
