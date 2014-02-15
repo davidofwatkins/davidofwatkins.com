@@ -92,19 +92,34 @@
 		}
 	});
 </script>
+
+<script>
+	// Hack for G+ badge in popup - only needed for Firefox/IE
+	$(document).ready(function() {
+		$(".moredw-link[for=gplus]").hover(function() {
+			console.log($("#gplus-popout-incubator").html());
+			$("#gplus-popup-content").append($("#gplus-popout-incubator").html());
+			$("#gplus-popout-incubator").remove();
+		})
+	});
+</script>
+
+<div id="gplus-popout-incubator" style="position: absolute; left: -99999999px;">
+	<div class="g-person" data-href="//plus.google.com/104494880066441442910" data-showtagline="false" data-rel="author"></div>
+</div>
+
 <div id="sidebar">
 	<div class="fixedsidebar">        
     	<h1>More DW:</h1>
         <div id="more-dw">
-        
         	<div id="socialpopup" for="">
                 <!-- Content divs below are display: none; only one activated at a time via js -->
                 <div class="socialpopup-content" id="github-popup-content" height="110" width="200" >
                     <iframe src="http://githubbadge.appspot.com/davidofwatkins" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
                 </div>
-                <div class="socialpopup-content" id="gplus-popup-content" height="65" width="200" style="margin-top: -10px" >
+                <div class="socialpopup-content" id="gplus-popup-content" height="300" width="300" style="margin-top: -10px;" >
                     <div id="gplusbordercover"></div>
-                    <div class="g-plus" data-href="https://plus.google.com/104494880066441442910?rel=publisher" data-width="200" data-height="69" data-theme="light"></div>
+                	<!-- G+ Badge goes here - starts off in div#gplus-popout-incubator to load off-page for FF/IE, then put in here when needed -->
                 </div>
                 <div class="socialpopup-content" id="facebook-popup-content" width="130" height="30" style="padding: 5px;">
                     <!-- Using iframe version of facebook subscribe button because the HTML5 and XBML versions have difficulty loading when display = none -->
