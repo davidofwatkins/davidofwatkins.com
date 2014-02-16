@@ -137,8 +137,8 @@
         	
         	<a href="https://github.com/davidofwatkins" class="moredw-link" for="github" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/github_off.png" /></a>
         	<a href="https://plus.google.com/104494880066441442910/about" class="moredw-link" for="gplus" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/googleplus_off.png" /></a>
+        	<a href="http://twitter.com/dwat91" class="moredw-link" for="twitter" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/twitter_off.png" /></a>
             <a href="http://www.facebook.com/davidofwatkins" class="moredw-link" for="facebook" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/facebook_off.png" /></a>
-            <a href="http://twitter.com/dwat91" class="moredw-link" for="twitter" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/twitter_off.png" /></a>
             <a href="http://www.linkedin.com/in/davidofwatkins" for="linkedin" class="moredw-link" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/linkedin_off.png" /></a>
         </div>
         <div id="likebuttons">
