@@ -119,4 +119,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell, :path => "bootstrap.sh"
   config.vm.network :forwarded_port, host: 8080, guest: 80
 
+  # 1GB of RAM
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 1024
+  end
+
 end
