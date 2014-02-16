@@ -5,6 +5,6 @@
 
     include_once("settings_local.php");
     
-	define("SITEVERSION", "1.1.2");
+	define("SITEVERSION", "1.2");
     define("SITEROOT", $siteroot);
 ?>
