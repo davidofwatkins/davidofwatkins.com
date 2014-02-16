@@ -86,9 +86,9 @@
 	#footer #likebuttons-mobile {
 		text-align: center;
 	}
-	#footer #likebuttons-mobile > * {
+	#footer #likebuttons-mobile #mobile-fb-wrapper, #footer #likebuttons-mobile #mobile-gplus-wrapper {
 		display: inline-block;
-		margin: 10px 20px;
+		margin: 10px;
 	}
 	#footer #likebuttons-mobile > *:first-child {
 		margin-top: 1px;
