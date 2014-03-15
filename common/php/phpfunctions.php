@@ -108,32 +108,37 @@
 	**********************/
 	
 	//Used by getRandomFavQuote() and listFavQuotes() to format quotations from XML
-	function formatQuote($quoteXML) {
-		$quote = '"' . $quoteXML->text . '"';
-		if ($quoteXML->author != "") { $quote .= ' - ' . $quoteXML->author; }
-		if ($quoteXML->source != "") { $quote .= ' (' . $quoteXML->source . ')'; }
+	function formatQuote($quote) {
+		$formattedQuote = '"' . $quote->text . '"';
+		if (isset($quote->author) && $quote->author != "") { $formattedQuote .= ' - ' . $quote->author; }
+		if (isset($quote->source) && $quote->source != "") { $formattedQuote .= ' (' . $quote->source . ')'; }
 		
-		return $quote;
+		return $formattedQuote;
 	}
 	
 	function getRandomFavQuote() {
-		//Requires PHP 5 (at least) to work
+		$raw = file_get_contents("common/json/favorite-quotes.json") or die("Could not access Favorite Quotes JSON");
+		$json = json_decode($raw);
+		$json = $json->quotes;
+
+		foreach ($json as $key => $quote) {
+			if (!$quote->active) { unset($json[$key]); }
+		}
 		
-		$xml = simplexml_load_file("common/xml/favorite-quotes.xml") or die("Could not access Favorite Quotes XML");
-		$random = rand(0, sizeof($xml) - 1);
-		$quoteXML = $xml->quote[$random];
-		
-		return formatQuote($quoteXML);
+		$random = rand(0, sizeof($json) - 1);
+		return formatQuote($json[$random]);
 	}
 	
 	function listFavQuotes() {
-		
-		$xml = simplexml_load_file("common/xml/favorite-quotes.xml") or die("Could not access Favorite Quotes XML");
+		$raw = file_get_contents("common/json/favorite-quotes.json") or die("Could not access Favorite Quotes JSON");
+		$json = json_decode($raw);
+		$json = $json->quotes;
 		$list = "<ol>";
-		
-		foreach ($xml as $quoteXML) {
-				
-			$list .= "<li>" . formatQuote($quoteXML) . "</li>";
+
+		foreach ($json as $quote) {
+			if ($quote->active) {
+				$list .= "<li>" . formatQuote($quote) . "</li>";
+			}
 		}
 		
 		$list .= "</ol>";
@@ -146,10 +151,10 @@
 	**********************/
 
 	function getPortfolioProjects() {
-		$xml = simplexml_load_file("common/xml/projects.xml") or die("Could not access Projects XML");
-		
-		$projects = json_decode(json_encode($xml), TRUE); //hacky way to convert the simplexml object to a simple php array
-		$projects = $projects["project"];
+
+		$json = file_get_contents("common/json/projects.json") or die("Could not access Projects JSON");
+		$projects = json_decode($json, true); // convert to array
+		$projects = $projects['projects'];
 
 		//Make some adjustments...
 		foreach ($projects as &$project) {
@@ -161,8 +166,6 @@
 				$project["src"] = $project["mobilesrc"];
 				unset($project["mobilesrc"]);
 			}
-
-			//
 		}
 
 		return $projects;

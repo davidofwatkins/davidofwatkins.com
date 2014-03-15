@@ -14,6 +14,9 @@ RewriteRule ^ %{REQUEST_URI}.php [L]
 
 ErrorDocument 404 /404.html
 
+# Response Types
+AddType application/json .json
+
 #### Forwarding ####
 
 # Forwarding to Social Networks
