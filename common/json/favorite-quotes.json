@@ -1,94 +1,94 @@
 {
-  "quotes": [
-    {
-      "text": "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.",
-      "author": "Steve Jobs",
-      "source": null,
-      "active": true
-    },
-    {
-      "text": "Every story I read about Google is kind of 'us vs. some other company for some stupid thing,' and I just don't find that very interesting. We should be building great things that don't exist. And our being negative is not how we make progress; most important things are not zero sum. There's a lot of opportunity out there, and we can use technology to make really new and really important things that make people's lives better.",
-      "author": "<a href=\"http://www.youtube.com/watch?v=Zf2Ct8-nd9w\" target=\"_blank\">Larry Page</a>",
-      "source": null,
-      "active": true
-    },
-    {
-      "text": "Life is a balance of holding on and letting go.",
-      "author": "Keith Urban",
-      "source": null,
-      "active": true
-    },
-    {
-      "text": "Music expresses that which can not be said and on which it is impossible to be silent.",
-      "author": "Victor Hugo",
-      "source": null,
-      "active": true
-    },
-    {
-      "text": "I've always found that sticking your fingers in your ears and humming loudly solves a whole slew of problems",
-      "author": "Jack O'Neill",
-      "source": "Stargate SG-1",
-      "active": false
-    },
-    {
-      "text": "To resist the influence of others, knowledge of one's self is most important.",
-      "author": "Teal'c",
-      "source": "Stargate SG-1",
-      "active": true
-    },
-    {
-      "text": "A computer once beat me at chess, but it was no match for me at kick boxing.",
-      "author": null,
-      "source": null,
-      "active": true
-    },
-    {
-      "text": "The way I see it, if you want the rainbow, you gotta put up with the rain.",
-      "author": "Dolly Parton",
-      "source": null,
-      "active": true
-    },
-    {
-      "text": "Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning.",
-      "author": "Rich Cook",
-      "source": null,
-      "active": false
-    },
-    {
-      "text": "Sometimes you don't know where you're from 'till you leave.",
-      "author": "Tim McGraw",
-      "source": null,
-      "active": true
-    },
-    {
-      "text": "Somewhere between the time you arrive and the time you go may lie the reason you were alive, but you'll never know.",
-      "author": "Jackson Browne",
-      "source": null,
-      "active": true
-    },
-    {
-      "text": "Do not take life too seriously. You will never get out of it alive.",
-      "author": "Elbert Hubbard",
-      "source": null,
-      "active": true
-    },
-    {
-      "text": "When we have choices about what to do with our time and in our careers, we have a responsibility to choose the things which put our powers, skills, and experience to their best use. We're obliged to do meaningful work.",
-      "author": "<a href=\"http://smarterware.org/8128/obliged-to-do-meaningful-work\" target=\"_blank \" />Gina Trapani</a>",
-      "source": null,
-      "active": true
-    },
-    {
-      "text": "If at first the idea is not absurd, then there is no hope for it.",
-      "author": "Albert Einstein",
-      "source": null,
-      "active": true
-    },
-    {
-      "text": "Stay hungry; stay foolish.",
-      "author": "Steve Jobs",
-      "source": null,
-      "active": true
-    }
-  ]
+    "quotes": [
+        {
+            "text": "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do.",
+            "author": "Steve Jobs",
+            "source": null,
+            "active": true
+        },
+        {
+            "text": "Every story I read about Google is kind of 'us vs. some other company for some stupid thing,' and I just don't find that very interesting. We should be building great things that don't exist. And our being negative is not how we make progress; most important things are not zero sum. There's a lot of opportunity out there, and we can use technology to make really new and really important things that make people's lives better.",
+            "author": "<a href=\"http://www.youtube.com/watch?v=Zf2Ct8-nd9w\" target=\"_blank\">Larry Page</a>",
+            "source": null,
+            "active": true
+        },
+        {
+            "text": "Life is a balance of holding on and letting go.",
+            "author": "Keith Urban",
+            "source": null,
+            "active": true
+        },
+        {
+            "text": "Music expresses that which can not be said and on which it is impossible to be silent.",
+            "author": "Victor Hugo",
+            "source": null,
+            "active": true
+        },
+        {
+            "text": "I've always found that sticking your fingers in your ears and humming loudly solves a whole slew of problems",
+            "author": "Jack O'Neill",
+            "source": "Stargate SG-1",
+            "active": false
+        },
+        {
+            "text": "To resist the influence of others, knowledge of one's self is most important.",
+            "author": "Teal'c",
+            "source": "Stargate SG-1",
+            "active": true
+        },
+        {
+            "text": "A computer once beat me at chess, but it was no match for me at kick boxing.",
+            "author": null,
+            "source": null,
+            "active": true
+        },
+        {
+            "text": "The way I see it, if you want the rainbow, you gotta put up with the rain.",
+            "author": "Dolly Parton",
+            "source": null,
+            "active": true
+        },
+        {
+            "text": "Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning.",
+            "author": "Rich Cook",
+            "source": null,
+            "active": false
+        },
+        {
+            "text": "Sometimes you don't know where you're from 'till you leave.",
+            "author": "Tim McGraw",
+            "source": null,
+            "active": true
+        },
+        {
+            "text": "Somewhere between the time you arrive and the time you go may lie the reason you were alive, but you'll never know.",
+            "author": "Jackson Browne",
+            "source": null,
+            "active": true
+        },
+        {
+            "text": "Do not take life too seriously. You will never get out of it alive.",
+            "author": "Elbert Hubbard",
+            "source": null,
+            "active": true
+        },
+        {
+            "text": "When we have choices about what to do with our time and in our careers, we have a responsibility to choose the things which put our powers, skills, and experience to their best use. We're obliged to do meaningful work.",
+            "author": "<a href=\"http://smarterware.org/8128/obliged-to-do-meaningful-work\" target=\"_blank \" />Gina Trapani</a>",
+            "source": null,
+            "active": true
+        },
+        {
+            "text": "If at first the idea is not absurd, then there is no hope for it.",
+            "author": "Albert Einstein",
+            "source": null,
+            "active": true
+        },
+        {
+            "text": "Stay hungry; stay foolish.",
+            "author": "Steve Jobs",
+            "source": null,
+            "active": true
+        }
+    ]
 }
