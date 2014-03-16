@@ -124,6 +124,7 @@
 		foreach ($json as $key => $quote) {
 			if (!$quote->active) { unset($json[$key]); }
 		}
+		$json = array_values($json); // Rebuild the array so there are no holes
 		
 		$random = rand(0, sizeof($json) - 1);
 		return formatQuote($json[$random]);
