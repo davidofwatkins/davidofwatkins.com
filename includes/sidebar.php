@@ -135,6 +135,7 @@
                 </div>
             </div>
         	
+        	<!-- @TODO: Replace these images with icons from a font library, such as Font Awesome: http://fortawesome.github.io/Font-Awesome/ -->
         	<a href="https://github.com/davidofwatkins" class="moredw-link" for="github" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/github_off.png" /></a>
         	<a href="https://plus.google.com/104494880066441442910/about" class="moredw-link" for="gplus" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/googleplus_off.png" /></a>
         	<a href="http://twitter.com/dwat91" class="moredw-link" for="twitter" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/twitter_off.png" /></a>
