@@ -1,5 +1,0 @@
-[01-Jun-2012 02:35:15] PHP Fatal error:  Cannot redeclare class Mobile_Detect in /home2/davidofw/public_html/beta/common/php/Mobile_Detect.php on line 16
-[01-Jun-2012 02:35:18] PHP Fatal error:  Cannot redeclare class Mobile_Detect in /home2/davidofw/public_html/beta/common/php/Mobile_Detect.php on line 16
-[01-Jun-2012 02:35:23] PHP Fatal error:  Cannot redeclare class Mobile_Detect in /home2/davidofw/public_html/beta/common/php/Mobile_Detect.php on line 16
-[01-Jun-2012 02:35:30] PHP Fatal error:  Cannot redeclare class Mobile_Detect in /home2/davidofw/public_html/beta/common/php/Mobile_Detect.php on line 16
-[01-Jun-2012 02:35:32] PHP Fatal error:  Cannot redeclare class Mobile_Detect in /home2/davidofw/public_html/beta/common/php/Mobile_Detect.php on line 16
