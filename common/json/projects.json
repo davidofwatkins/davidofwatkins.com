@@ -4,7 +4,7 @@
             "id": "zenput",
             "name": "Zenput",
             "helpertext": {},
-            "description": "In 2013, I joined <a href=\"https://www.zenput.com\" target=\"_blank\">Zenput</a>, a small start-up based in San Francisco, as a junior software engineer. Zenput provides real-time mobile data collection and analytics for businesses through iOS and Android apps. Companies that once relied on tedious paperwork can now distribute electronic forms to employees' mobile phones and tablets. Not only is this instant and more efficient, but it also opens up powerful analytics opportunities for managers and business owners.",
+            "description": "In 2013, I joined <a href=\"https://www.zenput.com\" target=\"_blank\">Zenput</a>, a small start-up in San Francisco, as a junior software engineer. Zenput provides real-time mobile data collection and analytics for businesses through iOS and Android apps. Companies can use Zenput to replace slow, outdated processes built on paper forms and surveys with fast, integrated mobile apps that offer superior analytics reported directly to managers.",
             "src": "https://www.zenput.com",
             "imagepath": "images/projects/zenput.png",
             "category": "dev",
