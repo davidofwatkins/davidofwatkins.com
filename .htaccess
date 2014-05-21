@@ -23,7 +23,7 @@ AddType application/json .json
 Redirect /+ https://plus.google.com/104494880066441442910
 Redirect /fb https://www.facebook.com/davidofwatkins
 Redirect /facebook https://www.facebook.com/davidofwatkins
-Redirect /twitter https://twitter.com/dwat91
+Redirect /twitter https://twitter.com/davidwatkinz
 Redirect /in http://www.linkedin.com/in/davidofwatkins
 Redirect /linkedin http://www.linkedin.com/in/davidofwatkins
 Redirect /github https://github.com/davidofwatkins

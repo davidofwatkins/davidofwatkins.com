@@ -15,7 +15,7 @@
 		<div id="mobile-social-buttons">
 			<a href="https://github.com/davidofwatkins" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/github_off.png" /></a>
 			<a href="https://plus.google.com/104494880066441442910/about" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/googleplus_off.png" /></a>
-			<a href="http://twitter.com/dwat91" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/twitter_off.png" /></a>
+			<a href="http://twitter.com/davidwatkinz" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/twitter_off.png" /></a>
             <a href="http://www.facebook.com/davidofwatkins" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/facebook_off.png" /></a>
             <a href="http://www.linkedin.com/in/davidofwatkins" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/linkedin_off.png" /></a>
 		</div>

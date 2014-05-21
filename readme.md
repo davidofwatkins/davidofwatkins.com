@@ -4,7 +4,7 @@
 
 davidofwatkins.com is a portfolio site and internet 
 
-**Author:** [+David Watkins](https://plus.google.com/104494880066441442910) ([@dwat91](https://twitter.com/dwat91))
+**Author:** [+David Watkins](https://plus.google.com/104494880066441442910) ([@davidwatkinz](https://twitter.com/davidwatkinz))
 
 Stable release: <https://davidofwatkins.com>
 Beta release: <https://beta.davidofwatkins.com>

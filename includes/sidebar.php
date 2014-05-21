@@ -125,7 +125,7 @@
                     <iframe src="//www.facebook.com/plugins/subscribe.php?href=https%3A%2F%2Fwww.facebook.com%2Fdavidofwatkins&amp;layout=button_count&amp;show_faces=true&amp;colorscheme=light&amp;font&amp;width=120" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px;" allowTransparency="true"></iframe>
                 </div>
                 <div class="socialpopup-content" id="twitter-popup-content" width="350" height="400">
-					<a class="twitter-timeline" href="https://twitter.com/dwat91" data-widget-id="365730330562412545">Tweets by @dwat91</a>
+					<a class="twitter-timeline" href="https://twitter.com/davidwatkinz" data-widget-id="365730330562412545">Tweets by @davidwatkinz</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </div>
                 <div class="socialpopup-content" id="linkedin-popup-content" height="130" width="355" style="margin: -10px 0 0 -5px; height: 130px;">
@@ -138,7 +138,7 @@
         	<!-- @TODO: Replace these images with icons from a font library, such as Font Awesome: http://fortawesome.github.io/Font-Awesome/ -->
         	<a href="https://github.com/davidofwatkins" class="moredw-link" for="github" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/github_off.png" /></a>
         	<a href="https://plus.google.com/104494880066441442910/about" class="moredw-link" for="gplus" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/googleplus_off.png" /></a>
-        	<a href="http://twitter.com/dwat91" class="moredw-link" for="twitter" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/twitter_off.png" /></a>
+        	<a href="http://twitter.com/davidwatkinz" class="moredw-link" for="twitter" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/twitter_off.png" /></a>
             <a href="http://www.facebook.com/davidofwatkins" class="moredw-link" for="facebook" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/facebook_off.png" /></a>
             <a href="http://www.linkedin.com/in/davidofwatkins" for="linkedin" class="moredw-link" target="_blank" ><img src="<?= SITEROOT ?>images/linkicons/linkedin_off.png" /></a>
         </div>

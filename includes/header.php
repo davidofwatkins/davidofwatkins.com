@@ -51,10 +51,10 @@
 
     <!-- Twitter Card Meta Info -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@dwat91">
+    <meta name="twitter:site" content="@davidwatkinz">
     <meta name="twitter:title" content="David Watkins">
     <meta name="twitter:description" content="<?= $metaDescription ?>">
-    <meta name="twitter:creator" content="@dwat91">
+    <meta name="twitter:creator" content="@davidwatkinz">
     <meta name="twitter:image:src" content="http://davidofwatkins.com/images/profileicon-perminent.jpg">
     <meta name="twitter:domain" content="davidofwatkins.com">
     <meta name="twitter:app:name:iphone" content="">
