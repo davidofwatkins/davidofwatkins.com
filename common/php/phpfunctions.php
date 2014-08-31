@@ -117,6 +117,10 @@
 	}
 	
 	function getRandomFavQuote() {
+
+		// Disabling quotes for now:
+		return '';
+
 		$raw = file_get_contents("common/json/favorite-quotes.json") or die("Could not access Favorite Quotes JSON");
 		$json = json_decode($raw);
 		$json = $json->quotes;
