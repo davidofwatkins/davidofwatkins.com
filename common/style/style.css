@@ -161,6 +161,11 @@ a:hover {
 		z-index: 10;
 	}
 
+	/* Fix for twitter widget width */
+	#socialpopup #twitter-popup-content #twitter-widget-0 {
+		width: 100% !important;
+	}
+
 #supercontent h1 {
 	text-align: center;
 	font-family: 'Raleway', Verdana, Geneva, sans-serif;
