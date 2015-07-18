@@ -2,6 +2,14 @@
 
 apt-get update
 
+apt-get install -y vim
+
+# Pretty command line
+hostname 'dofw-vm'
+echo "export CLICOLOR=1" >> /home/vagrant/.bashrc
+echo "export LSCOLORS=GxFxCxDxBxegedabagaced" >> /home/vagrant/.bashrc
+echo 'export PS1="[\u@\[\e[32;1m\]\H \[\e[0m\]\w]\$ "' >> /home/vagrant/.bashrc
+
 # Apache
 apt-get install -y apache2
 rm -rf /var/www
