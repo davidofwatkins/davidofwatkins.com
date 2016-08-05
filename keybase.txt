@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/davidofwatkins
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://davidofwatkins.com
+  * I am davidofwatkins (https://keybase.io/davidofwatkins) on keybase.
+  * I have a public key with fingerprint 3820 4026 6E2C 8262 2834  E177 81C4 662D 9B48 6316
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101b98873c2a2b297189fe812c4aaba60c590291dac59acb2121dbc519635ab65900a",
+            "fingerprint": "382040266e2c82622834e17781c4662d9b486316",
+            "host": "keybase.io",
+            "key_id": "81c4662d9b486316",
+            "kid": "0101b98873c2a2b297189fe812c4aaba60c590291dac59acb2121dbc519635ab65900a",
+            "uid": "cf30a3796792db6124c2d4bd765fee19",
+            "username": "davidofwatkins"
+        },
+        "service": {
+            "hostname": "davidofwatkins.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1470360643,
+    "expire_in": 157680000,
+    "prev": "9aa291002d7e891cbbeb3831402cc5ff82dc3b6d11bf24a964fe284e0a4da057",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGtUm1MHFUUXXAhfEiCKWAIbY1TJCmFZebN7Hxso1SbAG7ECLGUorC8mXkDw8fO
+MrtLoetaqG2hFUxbIzGgLdRFU6h1ExqtjaTYhRRCFDAKUiWCsjYrNohbtZDWOEP0
+X3/6/rx33z3nvHPvu6cSHjJERrSOStk9BUJKxGSIN+x/79cXPRiviM2YxYPVos0N
+1YnI6bLVyiJmwXACJ3iOZRlSABDwgGMIlpMQSwCBgpCHNC6YORxwhAi1AxR4QABC
+5AUzwdGkGfK0lsUhloVJsr0KqQ5Vtrs0WZIFOIUDmkZAYAENAEtSiGAYlhAomgYi
+x1MsTRK0RqxWnDpDM8dDJzLJinanBbZNew/A/8++3ZtygkTikGQ4muGAyNMEoAQg
+UrzI0GYJIYLTgU6k2mE90tAibJRFRToIXbWy3Yl5szAt1ygLSG+vXs8DcSZBqdd0
+HKriUgSlTstXu1wOi053NTt0/EHE2/5VsvGyXdRaqhEakeqUFTtmITSk4JJ1aYJi
+cJLGaYrMwlCTQ1aRTdYRZoZmcW3pzyChUdPkINS6gONAZBDLEQLPI55kSUL7HUEw
+SxILRIHkaZEgeAlQkKMpCQGWQjikRIibGUwvrsGuYBZK8wmrNEmnXGWHLreKMG/c
+icitRkNEpCE6KlIfNkNcbOJ/E3h1PtHwyXqUqVu2uY8s+x8nA73joLv0s/7d2yRj
+eXJu8fgzZxJS1aWz8auPHk//7uXK75/PtKa+NWenksdvtO14qtth79lxYyR7NqJ9
+tWgaj+2MGbrclGvMzn29rqum+KPODSwce+/mXy/97d4p+8YfCTrzM6qH5kLnB+Qv
+3lF6L1iC54o6zshnC7eFmglfdN6CPw3/NGd08eL+RO9k+P1iNBMsOOlbbri78KMH
+9m1wveHA4EBfxZ3jSfxOd2BlsWaf+sNgV6eN8PoSXmn5sLSpPcg+fayb9r56a2yW
+ur7vZsWBtpZRuQyrxwfTDr+hHv1JPKz4U8e/ySksMSX3v3Cl9duHo7bsNfWMpOf+
+cnu24fbIUseCJ5l/zlrzWlRX7qkPgjFjlRlkMOBfvD4x/+ytZev5Pwa3z0xKeQWt
+d2Mz48p+vxc/0HZxONS95L8z07Q7/9xEj5V19ivDptGPTWtPbt01VR5MO1SuTu95
+ot7t8XaEW+alqsYjS+3FOWt9FCq6khlTeWKstH6NcRmnjNbVcDoKFE0fKhwKlCZV
+GKynoy8bkvLSY8yzcRt/HjtZFj9Q01WyHrr/bt+Xbb8Vsp9Pzn2VsmX73ms+j8Rc
+XZncdTo7Z8WbwIXffuzrxZGJDJS/xzmcAcCKx/9m/IWG2kvG+yXl01N5Awd+Xi64
+tn7UJ86lTF/6Bw==
+=hPsp
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/davidofwatkins
+
+==================================================================
