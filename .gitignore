@@ -12,7 +12,6 @@ common/php/error_log
 beta/
 dev/
 cgi-bin/
-archive/
 
 # Local Config
 settings_local.php
