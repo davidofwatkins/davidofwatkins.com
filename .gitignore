@@ -6,6 +6,7 @@ google9e17676d809e0327.html
 php.ini
 error_log
 thumbs.db
+common/php/error_log
 
 # Directories
 beta/
