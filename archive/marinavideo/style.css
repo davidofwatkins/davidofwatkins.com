@@ -1,105 +1,131 @@
 /* CSS Document */
-#conash3D0 {height:0px; top:-1px; display: none;}
-		*{ margin: 0; padding: 0; }
-		img { border: none; }
-		html { min-height: 100%; }
-		body {
-			font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
-			font-size: 15px;
-			background: black;
-			background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(60%, black), color-stop(95%, #020C51));
-			background: -moz-linear-gradient(top, black, black 60%, #020C51 95%);
-		}
-		div#wrapper {
-			width: 860px;
-			margin: 20px auto auto auto;
-		}
-			div#wrapper h1 {
-				font-family: 'Leckerli One', cursive;
-				font-weight: normal;
-				font-size: 60px;
-				color: #679FFC;
-				padding-left: 30px;
-				text-shadow: 0 0 10px black;
-			}
-			div#wrapper h2 {
-				font-size: 18px;
-				color: #966;
-				margin-bottom: 20px;
-			}
-		div#content {
-			margin-top: -25px;
-			
-		}
-		.section {
-			background: white;
-			padding: 10px 20px 20px 20px;
-			//border-bottom: 1px solid #666;
-		}
-			div#content .section h1 {
-				font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
-				font-size: 30px;
-				color: #666;
-				font-weight: bold;
-				margin: 0 0 10px 0;
-				padding: 0;
-				text-shadow: none;
-			}
-				.section h1 span.subheader {
-					color: #333;
-				}
-			.section iframe {
-				margin: 0 10px 10px 10px;
-				float: right;	
-			}
-			.section .button, form input[type=submit] {
-				width: 100px;
-				font-size: 18px;
-				color: #000;
-				text-align: center;
-				padding: 7px;
-				margin: 20px 10px;
-				border: 1px solid blue;
-				text-decoration: none;
-				background: #06F;
-				border-radius: 3px;
-			}
-			.section .button {
-				position: absolute;
-				bottom: 10px;
-				float: left;
-			}
-			.section .button:hover {
-				background: #06C;
-			}
-			.section .buttonlink {
-				text-decoration: none;	
-			}
-		div#intro {
-			border-top-right-radius: 5px;
-			border-top-left-radius: 5px;
-			padding-top: 30px;
-		}
-		div#step1 { position: relative; }
-		div#step1, div#step3, div#step5 { background: #D3D3D3; }
-		div#step4 img { margin: 20px 15px 10px 15px; }
-		div#message-sent h1 {
-			text-align: center;
-			color: black;
-			margin: 30px !important;
-		}
-		form#submitvideo {
-			background: #E2E8FE;
-			text-align: center;	
-		}
-		form p {
-			margin: 10px;
-		}
-		form input {
-			margin-right: 20px;
-		}
-		form input#submissionlink {
-			font-size: 20px;
-			width: 500px;
-			text-align: center;
-		}
+#conash3D0 {
+    height: 0px;
+    top: -1px;
+    display: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    border: none;
+}
+html {
+    min-height: 100%;
+}
+body {
+    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+    font-size: 15px;
+    background: black;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(black),
+        color-stop(60%, black),
+        color-stop(95%, #020c51)
+    );
+    background: -moz-linear-gradient(top, black, black 60%, #020c51 95%);
+}
+div#wrapper {
+    width: 860px;
+    margin: 20px auto auto auto;
+}
+div#wrapper h1 {
+    font-family: 'Leckerli One', cursive;
+    font-weight: normal;
+    font-size: 60px;
+    color: #679ffc;
+    padding-left: 30px;
+    text-shadow: 0 0 10px black;
+}
+div#wrapper h2 {
+    font-size: 18px;
+    color: #966;
+    margin-bottom: 20px;
+}
+div#content {
+    margin-top: -25px;
+}
+.section {
+    background: white;
+    padding: 10px 20px 20px 20px;
+    //border-bottom: 1px solid #666;
+}
+div#content .section h1 {
+    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+    font-size: 30px;
+    color: #666;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-shadow: none;
+}
+.section h1 span.subheader {
+    color: #333;
+}
+.section iframe {
+    margin: 0 10px 10px 10px;
+    float: right;
+}
+.section .button,
+form input[type='submit'] {
+    width: 100px;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    padding: 7px;
+    margin: 20px 10px;
+    border: 1px solid blue;
+    text-decoration: none;
+    background: #06f;
+    border-radius: 3px;
+}
+.section .button {
+    position: absolute;
+    bottom: 10px;
+    float: left;
+}
+.section .button:hover {
+    background: #06c;
+}
+.section .buttonlink {
+    text-decoration: none;
+}
+div#intro {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-top: 30px;
+}
+div#step1 {
+    position: relative;
+}
+div#step1,
+div#step3,
+div#step5 {
+    background: #d3d3d3;
+}
+div#step4 img {
+    margin: 20px 15px 10px 15px;
+}
+div#message-sent h1 {
+    text-align: center;
+    color: black;
+    margin: 30px !important;
+}
+form#submitvideo {
+    background: #e2e8fe;
+    text-align: center;
+}
+form p {
+    margin: 10px;
+}
+form input {
+    margin-right: 20px;
+}
+form input#submissionlink {
+    font-size: 20px;
+    width: 500px;
+    text-align: center;
+}
