@@ -1,28 +1,6 @@
-# Ignored Files / Folders
-
-# Files
-sftp-config.json
-google9e17676d809e0327.html
-php.ini
-error_log
-thumbs.db
-common/php/error_log
-
-# Directories
-beta/
-dev/
-cgi-bin/
-
-# Local Config
-settings_local.php
-
-# Vagrant
-.vagrant/
-
-# Bluehost Error Pages
-400.shtml
-401.shtml
-403.shtml
-404.shtml
-500.shtml
-500.php
+.DS_Store
+_site/
+.sass-cache/
+.jekyll-metadata
+vendor/
+node_modules/
