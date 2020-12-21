@@ -1,3 +1,5 @@
-DavidOfWatkins.com has been (and is being) constructed fully by David Watkins from the ground up through web technologies including PHP, MySQL, Javascript, jQuery, and several plugins. More information about the site and its owner/author is available at davidofwatkins.com
-
-Thanks for your interest :)
+/* TEAM */
+Your title: David Watkins
+Site: https://davidofwatkins.com
+Twitter: @davidofwatkins
+Location: San Francisco, CA, USA
