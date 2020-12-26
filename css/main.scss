@@ -1,1 +1,29 @@
-// @todo fill in
+---
+---
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+// Generating colors from: https://material.io/resources/color/
+$highlight: #e91e63;
+$highlightDark: #b0003a;
+$highlightLight: #ff6090;
+
+$fontColor: #102027;
+
+body {
+    font-family: 'Noto Sans JP', Arial, 'Sans-Serif';
+    color: $fontColor;
+}
+
+a {
+    text-decoration: none;
+    color: $highlightLight;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+p {
+    font-size: 16px;
+}
