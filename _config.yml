@@ -18,7 +18,9 @@ email: david@davidofwatkins.com
 description: > # this means to ignore newlines until "baseurl:"
     The official website for David Of Watkins
 baseurl: '' # the subpath of your site, e.g. /blog
-url: '' # the base hostname & protocol for your site, e.g. http://example.com
+url: 'https://www.davidofwatkins.com' # the base hostname & protocol for your site, e.g. http://example.com
+
+twitter: '@davidofwatkins'
 
 # Build settings
 markdown: kramdown

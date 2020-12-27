@@ -2,16 +2,20 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     <meta
         name="description"
         content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}"
     />
-    <link rel="shortcut icon" type="image/png" href="{{ '/favicon.png' | relative_url }}" />
+    <meta property="og:site_name" content="European Travel, Inc." />
+    <meta property="og:image" content="{{ '/assets/i/thumbnail.png' | absolute_url }}" />
+    <meta property="og:description" content="{{ site.description | strip_html | normalize_whitespace }}" />
+    <meta property="og:url" content="{{ site.url }}" />
+    <meta name="twitter:site" content="{{ site.twitter }}" />
+    <meta name="twitter:author" content="{{ site.twitter }}" />
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
+    <link rel="shortcut icon" type="image/png" href="{{ '/favicon.png' | relative_url }}" />
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 
     <!-- Page-specific style if specified -->

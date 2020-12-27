@@ -15,7 +15,7 @@ If you're here for my resume, you can find it [here](/assets/downloads/resume.pd
 -   👥 &nbsp;[LinkedIn](https://www.linkedin.com/in/davidofwatkins/)
 -   👨‍💻 &nbsp;[Github](https://github.com/davidofwatkins)
 -   ⏯️ &nbsp;[YouTube](https://www.youtube.com/user/dwat91)
--   🐦 &nbsp;[Twitter](https://twitter.com/davidofwatkins)
+-   🐦 &nbsp;[Twitter](https://twitter.com/{{ site.twitter }})
 -   🔒 &nbsp;[Keybase](https://keybase.io/davidofwatkins)
 
 <br>
