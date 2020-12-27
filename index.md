@@ -3,7 +3,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 title: David
-style: /css/home.css
+style: /assets/css/home.css
 ---
 
 # 👋 Hi, I'm David
