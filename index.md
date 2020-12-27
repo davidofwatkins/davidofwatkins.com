@@ -20,4 +20,8 @@ If you're here for my resume, you can find it [here](/assets/downloads/resume.pd
 
 <br>
 
+<p class="holiday-message">
+    <!-- This will be filled by happy-holidays.js if appropriate -->
+</p>
+
 —David
