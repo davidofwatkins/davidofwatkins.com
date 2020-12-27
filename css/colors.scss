@@ -1,0 +1,26 @@
+// Colors from: https://material.io/resources/color/
+
+// Light them
+$colorFontLight: #102027;
+$colorBackgroundLight: #fafafa;
+
+// Dark theme
+$colorFontDark: #efefef;
+$colorBackgroundDark: #1b1b1b;
+
+:root {
+    --color-font: #{$colorFontLight};
+    --color-background: #{$colorBackgroundLight};
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-font: #{$colorFontDark};
+        --color-background: #{$colorBackgroundDark};
+    }
+}
+
+// Normalized color variables
+$colorHighlight: #e91e63;
+$colorFont: var(--color-font);
+$colorBackground: var(--color-background);
