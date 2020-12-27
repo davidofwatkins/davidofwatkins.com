@@ -1,0 +1,24 @@
+{
+    "name": "davidofwatkins.com",
+    "version": "1.0.0",
+    "description": "This is the davidofwatkins.com site, available at [davidofwatkins.com](https://www.davidofwatkins.com).",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "prettier -c .",
+        "lint:fix": "prettier --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/davidofwatkins/davidofwatkins.com.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/davidofwatkins/davidofwatkins.com/issues"
+    },
+    "homepage": "https://github.com/davidofwatkins/davidofwatkins.com#readme",
+    "devDependencies": {
+        "prettier": "2.2.1"
+    }
+}

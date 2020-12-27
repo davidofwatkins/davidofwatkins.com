@@ -1,0 +1,13 @@
+version: '3.2'
+services:
+    jekyll:
+        image: jekyll/jekyll:4.2.0
+        environment:
+            - JEKYLL_ENV=development
+        # Frustratingly, Docker has problems with inotify: https://github.com/jekyll/jekyll-watch/issues/17
+        command: bash -c "bundle install && bundle exec jekyll serve --watch --force_polling --incremental --config _config.yml --host 0.0.0.0"
+        ports:
+            - 4000:4000
+        volumes:
+            - .:/srv/jekyll
+            - ./vendor/bundle:/usr/local/bundle
