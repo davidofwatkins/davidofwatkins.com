@@ -8,9 +8,9 @@ style: /assets/css/home.css
 
 # 👋 Hi, I'm David
 
-I write software at a startup in San Francisco called [Zenput](https://www.zenput.com/). I like [making videos](https://www.youtube.com/@davidofwatkins), playing music, building things, and [pulling pranks](https://youtu.be/uBX6WRxhAKI).
+I like [editing videos](https://www.youtube.com/@davidofwatkins), playing music, tinkering with technology and software, and [pulling pranks](https://youtu.be/uBX6WRxhAKI). Based in San Francisco, I'm currently a software engineer at [Watch Duty](https://www.watchduty.org/).
 
-If you're here for my resume, you can find it [here](/assets/downloads/resume.pdf). Otherwise, maybe one of the following is what you're looking for:
+If you're looking for my resume, you can find it [here](/assets/downloads/resume.pdf). Otherwise, find me across the web below:
 
 -   <img class="social-icon" aria-hidden="true" src="/assets/i/social-icons/linkedin.svg" />
     [LinkedIn](https://www.linkedin.com/in/davidofwatkins/)
