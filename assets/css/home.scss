@@ -5,4 +5,36 @@
     margin: 15vh auto 0 auto;
     max-width: 900px;
     padding: 0 40px;
+
+    ul {
+        list-style: none;
+
+        li {
+            margin: 4px 0px;
+
+            img,
+            a {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    img.social-icon {
+        display: inline;
+        width: 14px;
+        margin-right: 4px;
+
+        &.dark-only {
+            display: none;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        img.social-icon.light-only {
+            display: none;
+        }
+        img.social-icon.dark-only {
+            display: inline;
+        }
+    }
 }

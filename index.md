@@ -12,11 +12,21 @@ I write software at a startup in San Francisco called [Zenput](https://www.zenpu
 
 If you're here for my resume, you can find it [here](/assets/downloads/resume.pdf). Otherwise, maybe one of the following is what you're looking for:
 
--   👥 &nbsp;[LinkedIn](https://www.linkedin.com/in/davidofwatkins/)
--   👨‍💻 &nbsp;[Github](https://github.com/davidofwatkins)
--   ⏯️ &nbsp;[YouTube](https://www.youtube.com/@davidofwatkins)
--   🐦 &nbsp;[Twitter](https://twitter.com/{{ site.twitter }})
--   🔒 &nbsp;[Keybase](https://keybase.io/davidofwatkins)
+-   <img class="social-icon" aria-hidden="true" src="/assets/i/social-icons/linkedin.svg" />
+    [LinkedIn](https://www.linkedin.com/in/davidofwatkins/)
+-   <img class="social-icon light-only" src="/assets/i/social-icons/github-light.svg" />
+    <img class="social-icon dark-only" src="/assets/i/social-icons/github-dark.svg" />
+    [Github](https://github.com/davidofwatkins)
+-   <img class="social-icon" aria-hidden="true" src="/assets/i/social-icons/youtube.svg" />
+    [YouTube](https://www.youtube.com/@davidofwatkins)
+-   <img class="social-icon" aria-hidden="true" src="/assets/i/social-icons/twitter.svg" />
+    [Twitter](https://twitter.com/{{ site.twitter }})
+-   <img class="social-icon" aria-hidden="true" src="/assets/i/social-icons/mastodon.svg" />
+    <a rel="me" href="https://mas.to/@davidofwatkins">Mastodon</a>
+-   <img class="social-icon" aria-hidden="true" src="/assets/i/social-icons/bluesky.svg" />
+    [Bluesky](https://bsky.app/profile/davidofwatkins.com)
+-   <img class="social-icon" aria-hidden="true" src="/assets/i/social-icons/keybase.svg" />
+    [Keybase](https://keybase.io/davidofwatkins)
 
 <br>
 
